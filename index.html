@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Transição de Telas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+<form action="index.php" method="post">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide1">Slide 1<br>
+        <input type="text" name="teste"></input>
+      </div>
+
+      <div class="swiper-slide slide2">Slide 2</div>
+
+      <div class="swiper-slide slide3">Slide 3
+        <button type="submit" name="botaoteste"></button>
+      </div>
+
+    </div>
+  </div>
+</form>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      spaceBetween: 0,
+      mousewheel: true,
+      keyboard: true
+    });
+  </script>
+</body>
+</html>
