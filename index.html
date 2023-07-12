@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <title>Transição de Telas</title>
@@ -57,27 +57,14 @@
         <div class="slide-body"><!--inicio do corpo da página de ""-->
           TEXTO
         </div><!--Fim do corpo da página de ""-->
-        
+
       </div>
 
     </div>
   </div>
 </form>
 
-  <script src="JS/swiper.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-    direction: 'horizontal',
-    slidesPerView: 1,
-    spaceBetween: 0,
-    keyboard: true,
-    on: {
-      slideChange: function () {
-        document.documentElement.scrollTop = 0; // Para navegadores modernos
-        document.body.scrollTop = 0; // Para navegadores antigos
-      }
-    }
-  });
-  </script>
 </body>
+  <script src="JS/swiper.js"></script>
+  <script src="JS/rolagem.js"></script>
 </html>
