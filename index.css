@@ -58,14 +58,14 @@ body {
     align-content: center;
   }
   .cabecalho{
-    margin: 0px;
+    margin-left: -10px;
     background-color: #0667E8;
     width: 100%;
     height: 40px;
     padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     justify-items: center;
     align-items: center;
     align-content: center;
