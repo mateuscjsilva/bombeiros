@@ -40,24 +40,22 @@ body {
 
   .slide2 {
     margin: 0;
-    background-color: #36a2eb;
+    width: 100%;
+    height: 100%;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+    flex-direction: column;
   }
 
   .slide3 {
     margin: 0;
-    background-color: #cc65fe;
+    width: 100%;
+    height: 100%;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+    flex-direction: column;
   }
   .cabecalho{
     margin-left: -10px;
