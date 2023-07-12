@@ -1,3 +1,4 @@
+/*------------------------------------------CSS-GLOBAL------------------------------------------*/
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@ body {
     padding: 0;
     overflow-x: hidden;
   }
+  /*------------------------------------------CSS-PAGINAS-GLOBAL------------------------------------------*/
   .slide-body{
     padding: 2.5%;
     padding-bottom: 20px;
@@ -19,14 +21,13 @@ body {
     height: 100vh;
     margin: 0;
   }
-
   .swiper-slide {
     margin: 0;
     display: flex;
     color: black;
     height: 100%; /* Alterado */
   }
-
+/*------------------------------------------CSS-PAGINAS------------------------------------------*/
   .slide1 {
     margin: 0;
     width: 100%;
@@ -57,6 +58,7 @@ body {
     flex-direction: column;
     flex-direction: column;
   }
+  /*------------------------------------------CSS-CABEÇALHO------------------------------------------*/
   .cabecalho{
     background-color: #0667E8;
     width: 100%;
@@ -79,3 +81,4 @@ body {
     align-items: center;
     align-content: center;
   }
+  /*------------------------------------------CSS-GERAL------------------------------------------*/
