@@ -15,6 +15,11 @@ html {
   padding-bottom: 20px;
   width: 95%;
   word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
 .swiper-container {
   width: 100%;
