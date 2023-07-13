@@ -15,6 +15,12 @@ html {
   padding-bottom: 20px;
   width: 95%;
   word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
 .swiper-container {
   width: 100%;
@@ -33,6 +39,23 @@ html {
   border-color: #0667E8;
   border-radius: 50px;
 }
+.linha{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.coluna{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
 /*------------------------------------------CSS-PAGINAS------------------------------------------*/
 .slide1 {
   margin: 0;
@@ -40,7 +63,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -52,7 +74,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .slide3 {
@@ -62,15 +83,15 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
+
+
 .slide4 {
   margin: 0;
   width: 100%;
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -82,7 +103,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .slide6 {
@@ -92,7 +112,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 .slide7 {
   margin: 0;
@@ -100,7 +119,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -112,7 +130,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .slide9 {
@@ -122,7 +139,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 .slide10 {
   margin: 0;
@@ -130,7 +146,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -142,7 +157,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .slide12 {
@@ -152,7 +166,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 .slide13 {
   margin: 0;
@@ -160,7 +173,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -172,7 +184,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .slide15 {
@@ -182,7 +193,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 .slide16 {
   margin: 0;
@@ -190,7 +200,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -202,7 +211,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .slide18 {
@@ -212,7 +220,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 .slide19 {
   margin: 0;
@@ -220,7 +227,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -232,7 +238,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .slide21 {
@@ -242,7 +247,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 .slide22 {
   margin: 0;
@@ -250,7 +254,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -262,7 +265,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .slide24 {
@@ -272,7 +274,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 .slide25 {
   margin: 0;
@@ -280,7 +281,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -292,7 +292,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .slide27 {
@@ -302,7 +301,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 .slide28 {
   margin: 0;
@@ -310,7 +308,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -322,7 +319,6 @@ html {
   background-color: white;
   display: flex;
   flex-direction: column;
-  flex-direction: column;
 }
 
 .slide30 {
@@ -331,7 +327,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
 }
 /*------------------------------------------CSS-CABEÇALHO------------------------------------------*/
