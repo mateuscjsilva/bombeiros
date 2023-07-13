@@ -38,6 +38,15 @@ html {
   border-color: #0667E8;
   border-radius: 50px;
 }
+.linha{
+  display: flex;
+  flex-direction: row;
+}
+.nome_checkbox
+{
+  display: flex;
+  flex-direction: column;
+}
 /*------------------------------------------CSS-PAGINAS------------------------------------------*/
 .slide1 {
   margin: 0;
@@ -69,6 +78,8 @@ html {
   flex-direction: column;
   flex-direction: column;
 }
+
+
 .slide4 {
   margin: 0;
   width: 100%;
