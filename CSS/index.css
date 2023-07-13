@@ -16,6 +16,7 @@ html {
   width: 95%;
   word-wrap: break-word;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -38,6 +39,22 @@ html {
   border-color: #0667E8;
   border-radius: 50px;
 }
+.linha{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.coluna{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
 
 /*------------------------------------------CSS-PAGINAS------------------------------------------*/
 .slide1 {
@@ -46,7 +63,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   padding-bottom: 20px;
 }
@@ -57,7 +73,6 @@ html {
   height: 100%;
   background-color: white;
   display: flex;
-  flex-direction: column;
   flex-direction: column;
 }
 
