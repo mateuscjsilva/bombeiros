@@ -27,6 +27,12 @@ body {
     color: black;
     height: 100%; /* Alterado */
   }
+  .input-texto {
+    border: 1px 1px 1px;
+    border-style: solid;
+    border-color: #0667E8;
+    border-radius: 50px;
+  }
 /*------------------------------------------CSS-PAGINAS------------------------------------------*/
   .slide1 {
     margin: 0;
