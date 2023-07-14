@@ -61,6 +61,22 @@ html {
   border-color: #0667E8;
   border-radius: 50px;
 }
+.checkbox{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #0667E8;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox:checked {
+  background-color: #0667E8 ;
+}
+.checkbox:focus {
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
 /*------------------------------------------CSS-PAGINAS------------------------------------------*/
 .slide1 {
   margin: 0;
