@@ -34,6 +34,7 @@ html {
   height: 100%; /* Alterado */
 }
 .centro{
+  display: flex;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -48,11 +49,13 @@ html {
   flex-direction: column;
 }
 .quadrado{
+  display: flex;
   border: 1px 1px 1px;
   border-style: solid;
   border-color: #0667E8;
 }
 .circulo {
+  display: flex;
   border: 1px 1px 1px;
   border-style: solid;
   border-color: #0667E8;
