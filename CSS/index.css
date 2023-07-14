@@ -33,21 +33,19 @@ html {
   color: black;
   height: 100%; /* Alterado */
 }
-.linha{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-}
-.coluna{
-  display: flex;
-  flex-direction: column;
+.centro{
   justify-content: center;
   justify-items: center;
   align-items: center;
   align-content: center;
+}
+.linha{
+  display: flex;
+  flex-direction: row;
+}
+.coluna{
+  display: flex;
+  flex-direction: column;
 }
 .quadrado{
   border: 1px 1px 1px;
