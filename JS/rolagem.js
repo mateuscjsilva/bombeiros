@@ -14,7 +14,7 @@ function navigateToSlide(slideNumber) {
  swiper.slideTo(slideNumber - 1, 0); // O índice dos slides começa em 0
 }
   
-var menuIcons = document.getElementsByClassName("menu-icon");
+var menuIcons = document.getElementsByClassName("menu-icon");//TRAZ BARRA LATERAL PARA A TELA E A RETIRA
 var barraLateral = document.querySelector(".barra-Lateral");
 
     for (var i = 0; i < menuIcons.length; i++) {
@@ -27,7 +27,7 @@ var barraLateral = document.querySelector(".barra-Lateral");
       });
     }
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function(event) {//TRAZ BARRA LATERAL PARA A TELA E A RETIRA
 var isClickedInsideBarraLateral = barraLateral.contains(event.target);
 var isClickedMenuIcon = event.target.classList.contains("menu-icon");
   
@@ -38,13 +38,13 @@ var isClickedMenuIcon = event.target.classList.contains("menu-icon");
 
 var menuIcons = document.getElementsByClassName("menu-icon");
 
-    for (var i = 0; i < menuIcons.length; i++) {
+    for (var i = 0; i < menuIcons.length; i++) {//MUDA A OPACIDADE DA IMAGEM APÓS O CLIQUE
       menuIcons[i].addEventListener("click", function(event) {
         var clickedIcon = event.target;
         clickedIcon.classList.add("clicked");
 
         setTimeout(function() {
           clickedIcon.classList.remove("clicked");
-        }, 100); // Remove a classe "clicked" após 1 segundo (1000 milissegundos)
+        }, 100); // Remove a classe "clicked" após 1 milisegundo (100 milissegundos)
       });
     }
