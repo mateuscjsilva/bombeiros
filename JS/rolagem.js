@@ -9,3 +9,42 @@ var swiper = new Swiper('.swiper-container', {
       }
     }
   });
+
+function navigateToSlide(slideNumber) {
+ swiper.slideTo(slideNumber - 1, 0); // O índice dos slides começa em 0
+}
+  
+var menuIcons = document.getElementsByClassName("menu-icon");
+var barraLateral = document.querySelector(".barra-Lateral");
+
+    for (var i = 0; i < menuIcons.length; i++) {
+      menuIcons[i].addEventListener("click", function() {
+        if (barraLateral.style.left === "-200px") {
+          barraLateral.style.left = "0";
+        } else {
+          barraLateral.style.left = "-200px";
+        }
+      });
+    }
+
+document.addEventListener("click", function(event) {
+var isClickedInsideBarraLateral = barraLateral.contains(event.target);
+var isClickedMenuIcon = event.target.classList.contains("menu-icon");
+  
+      if (!isClickedInsideBarraLateral && !isClickedMenuIcon) {
+        barraLateral.style.left = "-200px";
+      }
+    });
+
+var menuIcons = document.getElementsByClassName("menu-icon");
+
+    for (var i = 0; i < menuIcons.length; i++) {
+      menuIcons[i].addEventListener("click", function(event) {
+        var clickedIcon = event.target;
+        clickedIcon.classList.add("clicked");
+
+        setTimeout(function() {
+          clickedIcon.classList.remove("clicked");
+        }, 100); // Remove a classe "clicked" após 1 segundo (1000 milissegundos)
+      });
+    }
