@@ -408,26 +408,20 @@ html {
 }
 /*------------------------------------------CSS-GERAL------------------------------------------*/
 .square {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 90px;
   border-radius: 10px;
   border: 2px solid blue;
   background-color: white;
   position: relative;
   cursor: pointer;
 }
-
-.square i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  color: blue;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.squareintro {
+  width: 120px;
+  height: 30px;
+  background-color: blue;
+  position: center;
+  margin left:"70px";
+  cursor: pointer;
 }
 
-.square.selected i {
-  opacity: 1;
-}
