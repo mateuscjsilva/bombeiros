@@ -374,3 +374,27 @@ html {
   align-content: center;
 }
 /*------------------------------------------CSS-GERAL------------------------------------------*/
+.square {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 2px solid blue;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.square i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: blue;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.square.selected i {
+  opacity: 1;
+}
