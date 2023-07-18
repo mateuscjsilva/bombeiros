@@ -36,21 +36,21 @@ html {
   height: 100%; /* Alterado */
 }
 .navigation {
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
   background-color: #0667E8;
-  padding: 6px;
+  margin-top: 6px;
+  margin-left: 6px;
   color: #ccc;
   cursor: pointer;
 }
 .barra-Lateral {
-  width: 150px;
+  width: 180px;
   height: 100%;
   position: fixed;
   overflow-y: scroll;
   top: 60px;
-  left: -200px;
+  left: -220px;
   transition: left 0.3s ease;
   background-color: #0667E8;
   padding: 10px;
@@ -430,7 +430,7 @@ html {
   height: 30px;
   background-color: blue;
   position: center;
-  margin left:"70px";
+  margin-left:"70px";
   cursor: pointer;
 }
 

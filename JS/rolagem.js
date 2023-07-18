@@ -19,10 +19,10 @@ var barraLateral = document.querySelector(".barra-Lateral");
 
     for (var i = 0; i < menuIcons.length; i++) {
       menuIcons[i].addEventListener("click", function() {
-        if (barraLateral.style.left === "-200px") {
+        if (barraLateral.style.left === "-220px") {
           barraLateral.style.left = "0";
         } else {
-          barraLateral.style.left = "-200px";
+          barraLateral.style.left = "-220px";
         }
       });
     }
@@ -32,7 +32,7 @@ var isClickedInsideBarraLateral = barraLateral.contains(event.target);
 var isClickedMenuIcon = event.target.classList.contains("menu-icon");
   
       if (!isClickedInsideBarraLateral && !isClickedMenuIcon) {
-        barraLateral.style.left = "-200px";
+        barraLateral.style.left = "-220px";
       }
     });
 
