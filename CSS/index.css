@@ -39,7 +39,8 @@ html {
   width: 100%;
   display: flex;
   background-color: #0667E8;
-  margin-top: 6px;
+  margin-top: 10px;
+  text-decoration: underline white;
   margin-left: 6px;
   color: #ccc;
   cursor: pointer;
