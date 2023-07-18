@@ -19,10 +19,6 @@ html {
   word-wrap: break-word;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
 }
 .swiper-container {
   width: 100%;
@@ -114,6 +110,11 @@ html {
 }
 .checkbox:focus {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.input-linha{
+  border: none;
+  border-bottom: 1px solid #0667E8;
+  outline: none;
 }
 /*------------------------------------------CSS-PAGINAS------------------------------------------*/
 .slide1 {
@@ -412,6 +413,7 @@ html {
 }
 .cabecalho-titulo{
   width: 240px;
+  text-align: center;
   height: 100%;
   color: white;
   font-size: 22px;
