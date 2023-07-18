@@ -39,7 +39,6 @@ html {
   width: 100%;
   display: flex;
   background-color: #0667E8;
-  margin-top: 10px;
   text-decoration: underline white;
   margin-left: 6px;
   color: #ccc;
@@ -69,6 +68,12 @@ html {
 .centro{
   display: flex;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.justify{
+  display: flex;
   justify-items: center;
   align-items: center;
   align-content: center;
