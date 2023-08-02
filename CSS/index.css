@@ -242,6 +242,7 @@ html {
 }
 .first
 {
+  margin: 0;
   width: 400px;
   height: 100hv;
   background-color: #000000;
