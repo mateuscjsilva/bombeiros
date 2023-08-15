@@ -506,16 +506,19 @@
         </div><!-- Fim do cabeçalho da pagina "" -->
 
         <div class="slide-body centro"><!--inicio do corpo da página de ""-->
-          <div class="quadrado linha centro" style="width: 320px;height: 30px;justify-content: space-evenly;">
+      <div style="width: 100%; height: 1289px; justify-content: space-between; flex-direction: column;display: flex;"> 
+        <div> 
+          <div class="quadrado linha centro" style="width: 320px;height: 30px;">
             <span class="centro" style="width: 49%;height: 100%;">Menor de 5</span>
             <div style="width: 2px;height: 100%;background-color: #0667E8;"></div>
             <span class="centro" style="width: 49%;height: 100%;">Maior de 5</span>
           </div>
-              <div class="coluna centro" style="border-style:solid; border-color: #0667E8; width: 320px; height: 279px; justify-content: space-evenly; ">
-               <img src="IMAGENS/corpo-maior-5.png" style="width: 88%;" >
+              <div class="coluna centro" style="border-style:solid; border-color: #0667E8; width: 320px; height: 279px;  ">
+               <img src="IMAGENS/corpo-maior-5.png" style="width: 88%; ">
+               <img src="IMAGENS/corpo-menor-5.png" style="width: 88%; display: none;">
               </div>
               <div class="linha centro "  > 
-                <div class="coluna centro" style="margin-top: 20px;">
+                <div class="coluna centro" >
                   <div class="linha " style=" border-style:solid; border-color: #0667E8; width: 150px; height: 30px;">
                     <img src="IMAGENS/Fraturas-Luxações-Entorses.png" width="25px" > 
                     <span class="centro" style="font-size: 11px;">Fraturas/Luxações/Entorses</span>
@@ -555,13 +558,14 @@
                             <span class="centro" >Amputação</span>
                           </div>
                         </div>
-
-            </div>                
-              <div class="linha  centro" style="color: white; background-color: #0667E8;  width: 100%; height: 50px;justify-content: space-evenly; margin-top: 20px;">
+               </div>
+          </div>
+          <div>           
+              <div class="linha  centro" style="color: white; background-color: #0667E8;  width: 100%; height: 50px;">
                   <span class=" coluna centro" style="font-size: 20px; text-align: center;"> Ferimentos/Fraturas/Entorses<br>Luxação/Contusão</span>
                 </div>
                 <div class="coluna centro"> 
-                  <table border="1" style="border-style:solid; border-color: #0667E8; width: 300px; margin-top: 10px;">
+                  <table border="1" style="border-style:solid; border-color: #0667E8; width: 300px; ">
                     <tr style="border-style:solid; border-color: #0667E8;">
                       <th>Local</th>
                       <th>Lado</th>
@@ -631,9 +635,10 @@
                       </tr>
                   </table>
                 </div>
-                
+            </div>
+            <div>
                 <div class="coluna centro">
-                  <table border="1" style="border-style:solid; border-color: #0667E8; width: 300px; margin-top: 10px;">
+                  <table border="1" style="border-style:solid; border-color: #0667E8; width: 300px; ">
                     <tr style="border-style:solid; border-color: #0667E8; width: 50px;">
                       <th>Queimadura</th>
                       <th>1°Grau</th>
@@ -698,7 +703,8 @@
                     </tr>
                   </table>
                 </div>
-
+              </div>  
+          </div>
         </div><!--Fim do corpo da página de ""-->
    
     </div>
@@ -793,48 +799,122 @@
 
         <div class="slide-body"><!--inicio do corpo da página de ""-->
           <div class="coluna centro" style="width: 100%;" >
-            <span style="margin-top: 10px;">O que aconteceu(sinais e sintomas)</span>
-            <input type="text" style="border-style:solid; border-color: #0667E8;">
+            <span style="font-size: 20px; margin-top: 10px;">O que aconteceu(sinais e sintomas)</span>
+            <input type="text" style="border-style:solid; border-color: #0667E8;width: 300px; height: 40px; ">
               
-            <div class="linha centro"> <span style="margin-top: 10px;">Aconteceu outras vezes?</span> 
-                <span style="margin-left: 5px; "> sim</span> <input type="checkbox" class="checkbox"> 
-                <input  type="checkbox" class="checkbox"> <span>não</span>
+            <div class="coluna centro"> 
+              <div class="linha centro"> 
+              <span style="font-size: 20px; margin-top: 10px;">Aconteceu outras vezes?</span> 
+            </div>
+              <div class="coluna centro"> 
+                  <div class="linha centro"> 
+                    <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                    <input type="checkbox" class="checkbox" style="width: 20px; height: 20px;"> 
+                    <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                    <span style="font-size: 20px;">não</span>
+                  </div>
+                </div>
               </div>
-
-              <span style="margin-top: 10px;">A quanto tempo isso aconteceu?</span>
-              <input type="text" style="border-style:solid; border-color: #0667E8;">
+              <span style="font-size: 20px; margin-top: 10px;">A quanto tempo isso aconteceu?</span>
+              <input type="text" style="border-style:solid; border-color: #0667E8;width: 300px; height: 40px; ">
                 
               <div class="coluna centro"> 
-                <div class="linha centro"> 
-                  <span style="margin-top: 10px;">Possui algum problema de saúde?</span>
-                  <span style="margin-left: 5px; margin-top: 10px;"> sim</span> <input style="margin-top: 10px;" type="checkbox" class="checkbox"> 
-                   <input style="margin-top: 10px;" type="checkbox" class="checkbox"> <span style="margin-top: 10px;">não</span>
+                <div class="coluna centro"> 
+                  <div class="linha centro"> 
+                  <span style="font-size: 20px; margin-top: 10px;">Possui algum problema de saúde?</span> 
                 </div>
+                  <div class="coluna centro"> 
+                      <div class="linha centro"> 
+                        <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                        <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                        <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                        <span style="font-size: 20px;">não</span>
+                      </div>
+                    </div>
+                  </div>
+
                    <div class=" linha centro" style="display: none;">
-                          <span style="margin-top: 10px;" >Quais?</span>
-                          <input type="text" style="border-style:solid; border-color: #0667E8;">
+                          <div class="coluna centro"> 
+                            <span style="font-size: 20px; margin-top: 10px;" >Quais?</span>
+                            <input type="text" style="border-style:solid; border-color: #0667E8;width: 300px; height: 40px; ">
+                          </div>
                    </div>
                 </div>
 
                 <div class="coluna centro"> 
-                  <div class="linha centro"> 
-                    <span style="margin-top: 10px;">Faz uso de medicação?</span>
-                    <span style="margin-left: 5px; margin-top: 10px;"> sim</span> <input style="margin-top: 10px;" type="checkbox" class="checkbox"> 
-                     <input style="margin-top: 10px;" type="checkbox" class="checkbox"> <span style="margin-top: 10px;">não</span>
+                  <div class="coluna centro"> 
+                    <div class="linha centro"> 
+                    <span style="font-size: 20px; margin-top: 10px;">Faz uso de medicação?</span> 
                   </div>
+                    <div class="coluna centro"> 
+                        <div class="linha centro"> 
+                          <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                          <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                          <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                          <span style="font-size: 20px;">não</span>
+                        </div>
+                      </div>
+                    </div>
+
                      <div class=" coluna centro" style="display: none;">
-                          <div class="linha centro"> 
-                            <span style="margin-top: 10px;" >Horário da ultima <br>medicação?</span> 
-                            <input type="text" style="border-style:solid; border-color: #0667E8; margin-left: 10px;">
+                          <div class="linha centro">
+                              <div class="coluna centro">
+                                <span style="font-size: 20px; margin-top: 10px;" >Horário da ultima <br>medicação?</span> 
+                                <input type="text" style="border-style:solid; border-color: #0667E8; width: 300px; height: 40px; ">
+                            </div>
                           </div>
-                          <div class=" linha centro" style="">
-                            <span style="margin-top: 10px;" >Quais?</span>
-                            <input type="text" style="border-style:solid; border-color: #0667E8;">
+                          <div class=" linha centro" style=" margin-top: 5px;">
+                              <div class="coluna centro">
+                                  <span  >Quais?</span>
+                                  <input type="text" style="border-style:solid; border-color: #0667E8; width: 300px; height: 40px; ">
+                            </div>
                           </div> 
                      </div>
-                     
-                  </div>
+                  </div> 
                   
+                  <div class="coluna centro"> 
+                    <div class="coluna centro"> 
+                      <div class="linha centro"> 
+                      <span style="font-size: 20px; margin-top: 10px;">Alérgico a algo?</span> 
+                    </div>
+                      <div class="coluna centro"> 
+                          <div class="linha centro"> 
+                            <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                            <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                            <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                            <span style="font-size: 20px;">não</span>
+                          </div>
+                        </div>
+                      </div>
+
+                       <div class=" linha centro" style="display: none;">
+                              <div class=" coluna centro"> 
+                                <span style="font-size: 20px; margin-top: 10px;" >Especifique</span>
+                                <input type="text" style="border-style:solid; border-color: #0667E8; width: 300px; height: 40px; ">
+                              </div>
+                       </div>
+                    </div>
+                    <div class="coluna centro"> 
+                      <div class="coluna centro"> 
+                        <div class="linha centro"> 
+                        <span style="font-size: 20px; margin-top: 10px;">Ingeriu alimento ou liquido >=6h?</span> 
+                      </div>
+                        <div class="coluna centro"> 
+                            <div class="linha centro"> 
+                              <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                              <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                              <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                              <span style="font-size: 20px;">não</span>
+                            </div>
+                          </div>
+                        </div>
+                         <div class=" linha centro" style="display: none;">
+                                <div class="coluna centro"> 
+                                  <span style="margin-top: 10px; font-size: 20px;" >Que horas?</span>
+                                  <input type="text" style="border-style:solid; border-color: #0667E8; width: 300px; height: 40px; ">
+                              </div>
+                         </div>
+                      </div> 
                   
           </div>
         </div><!--Fim do corpo da página de ""-->
