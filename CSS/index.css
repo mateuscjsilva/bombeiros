@@ -1,6 +1,8 @@
 /*------------------------------------------CSS-GLOBAL------------------------------------------*/
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
   padding: 0;
   overflow-x: hidden;
 }
@@ -15,7 +17,9 @@ html {
   margin-top: 60px;
   padding-bottom: 20px;
   padding-top: 20px;
-  width: 95%;
+  width: 100%;
+  height: 100%;
+  background-image: "IMAGENS/backgroud.png";
   word-wrap: break-word;
   display: flex;
   flex-direction: column;
@@ -138,24 +142,58 @@ html {
 .slide1 {
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #0667E8;
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
-.first
+.parlog
 {
   width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 15px;
+  background-color: ;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.log
+{
+  width: 60%;
+  z-index: 1;
+}
+.classeA
+{
+  width: 80%;
   height: 100%;
-  background-color: #000000;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  display: flex;
+  justify-content: left;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  background-color:;
+}
+.backgroud
+{
+  width: 390px;
 }
 /*--------------------------------------------CSS Login------------------------------------------*/
 .slide2 {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
 }
