@@ -165,12 +165,8 @@ html {
   align-items: center;
   align-content: center;
 }
-.log
-{
-  width: 60%;
-  z-index: 1;
-}
-.classeA
+
+.ColunaM
 {
   width: 80%;
   height: 100%;
@@ -184,10 +180,7 @@ html {
   align-content: center;
   background-color:;
 }
-.backgroud
-{
-  width: 390px;
-}
+
 /*--------------------------------------------CSS Login------------------------------------------*/
 .slide2 {
   margin: 0;
