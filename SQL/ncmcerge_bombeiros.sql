@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24-Ago-2023 às 14:32
+-- Tempo de geração: 29-Ago-2023 às 17:24
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -20,6 +20,36 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `ncmcerge_bombeiros`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `admin`
+--
+
+CREATE TABLE `admin` (
+  `id_admin` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `anamnese`
+--
+
+CREATE TABLE `anamnese` (
+  `id_anamnese` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `anamnese_gestacional`
+--
+
+CREATE TABLE `anamnese_gestacional` (
+  `id_anamnese_gestacional` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -84,11 +114,41 @@ CREATE TABLE `forma_conducao` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `localizacao_traumas`
+-- Estrutura da tabela `localizacao_traumas_maior`
 --
 
-CREATE TABLE `localizacao_traumas` (
-  `id_localizacao_traumas` int(11) NOT NULL
+CREATE TABLE `localizacao_traumas_maior` (
+  `id_localizacao_traumas_maior` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `localizacao_traumas_menor`
+--
+
+CREATE TABLE `localizacao_traumas_menor` (
+  `id_localizacao_traumas_menor` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `materiais_utilizados`
+--
+
+CREATE TABLE `materiais_utilizados` (
+  `id_materiais_utilizados` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `objetos_recolhidos`
+--
+
+CREATE TABLE `objetos_recolhidos` (
+  `id_objetos_recolhidos` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -125,6 +185,26 @@ CREATE TABLE `paciente` (
 
 CREATE TABLE `problemas_suspeitos` (
   `id_problemas_suspeitos` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `procedimentos_efetuados`
+--
+
+CREATE TABLE `procedimentos_efetuados` (
+  `id_procedimentos_efetuados` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `sinais_e_sintomas`
+--
+
+CREATE TABLE `sinais_e_sintomas` (
+  `id_sinais_e_sintomas` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
