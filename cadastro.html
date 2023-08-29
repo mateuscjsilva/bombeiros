@@ -6,33 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div class="slide-body" style="padding: 0px;"><!--inicio do corpo da página de ""-->
-        <div class="logo">
-          <img src="IMAGENS/logo.png" width="216px" style="z-index: 1; ">
+<html>
+<head>
+    <html>
+        <head>
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        input[type=text], input[type=email], input[type=password], input[type=tel] {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          margin-top: 6px;
+          margin-bottom: 14px;
+        }
+        
+        input[type=submit] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          background-color: #f2f2f2;
+          padding: 18px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>Tela de cadastro</h1>
+        
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome">
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+        
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone">
+        
+            <label for="address">Endereço</label>
+            <input type="text" id="address" name="address" placeholder="Digite seu endereço">
+        
+            <input type="submit" value="Cadastrar">
+          </form>
         </div>
-          <div class="imagemf">
-            <img src="IMAGENS/backgroud.png" style="width: 430px;">
-          </div>
-          <div class="login-container">
-            <h2>Login</h2>
-            <form action="#" method="post">
-              <label for="username"></label>
-              <input type="text" id="username" name="username" required>
-                
-              <label for="password"></label>
-              <input type="password" id="password" name="password" required>
-
-              <label for="Name"></label>
-              <input type="text" id="name" name="name" required>
-                
-              <input type="submit" value="Entrar">
-              <input type="submit" value="Cadastrar">
-            </form>
-        </div>
-      </div><!--Fim do corpo da página de ""-->
-
-    </div><!-- Fim da página de "" -->
-
+        
+        </body>
+        </html>
 </body>
+</html>
 </html>
