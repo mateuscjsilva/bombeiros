@@ -561,6 +561,16 @@ html {
   align-content: center;
   flex-direction: column;
 }
+.ok1
+{
+  width: 90%;
+  height: 80vh;
+  margin-left: 20px;
+  background-color: #0668e8b7;
+  position: absolute;
+  top: 100px;
+  display: flex;
+}
 .confirma
 {
   width: 50%;
