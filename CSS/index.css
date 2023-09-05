@@ -546,4 +546,27 @@ html {
   margin-left:"70px";
   cursor: pointer;
 }
-
+.ok
+{
+  width: 90%;
+  height: 80vh;
+  margin-left: 20px;
+  background-color: #0668e800;
+  position: absolute;
+  top: 100px;
+  display: flex;
+ /* justify-content: center;*/
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.confirma
+{
+  width: 50%;
+  height: 10%;
+  background-color: greenyellow;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: green;
+}
