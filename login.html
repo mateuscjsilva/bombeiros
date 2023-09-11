@@ -11,12 +11,14 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="fundo">
+    <form id="formlogin" class="fundo">
         <img src="IMAGENS/logo.png" width="216px">
         <span class="logintext">Login</span>
-        <input class="inputtextlogin" placeholder="código" type="text">
-        <input class="inputtextlogin" placeholder="senha" style="margin-top: 20px;" type="password">
-        <button class="botaoentrarlogin" style="margin-top: 20px;">Entrar</button>
-    </div>
+        <input class="inputtextlogin" id="cod_bombeiro" placeholder="código" type="text">
+        <input class="inputtextlogin" id="senha_bombeiro" placeholder="senha" style="margin-top: 20px;" type="password">
+        <input type="submit" class="botaoentrarlogin" form="formlogin" style="margin-top: 20px;" value="Entrar">  
+    </form>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="JS/login.js"></script>
 </html>
