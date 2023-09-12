@@ -4,8 +4,6 @@ $('#formlogin').submit(function(e){
     var cod = $('#cod_bombeiro').val();
     var senha = $('#senha_bombeiro').val();
 
-    console.log("codigo: " + cod, "senha: " + senha);
-
     $.ajax({
         url: 'PHP/verificar-login.php',
         method: 'POST',
