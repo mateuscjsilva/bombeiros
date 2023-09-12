@@ -4,12 +4,18 @@ $('#formlogin').submit(function(e){
     var cod = $('#cod_bombeiro').val();
     var senha = $('#senha_bombeiro').val();
 
+    console.log("codigo: " + cod, "senha: " + senha);
+
     $.ajax({
         url: 'PHP/verificar-login.php',
         method: 'POST',
-        data:{cod: cod, senha: senha},
+        data: { cod: cod, senha: senha },
         dataType: 'json'
-    }).done(function(result){
-        header("Location: index.html")
-    })
+    }).done(function(result) {
+        if (result.success) {
+            window.location.href = 'index.html';
+        } else {
+            alert("Erro: " + result.error);
+        }
+    });
 });
