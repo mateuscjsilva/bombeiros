@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29-Ago-2023 às 17:24
+-- Tempo de geração: 12/09/2023 às 21:24
 -- Versão do servidor: 10.4.28-MariaDB
--- versão do PHP: 8.2.4
+-- Versão do PHP: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `admin`
+-- Estrutura para tabela `admin`
 --
 
 CREATE TABLE `admin` (
@@ -34,7 +34,7 @@ CREATE TABLE `admin` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `anamnese`
+-- Estrutura para tabela `anamnese`
 --
 
 CREATE TABLE `anamnese` (
@@ -44,7 +44,7 @@ CREATE TABLE `anamnese` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `anamnese_gestacional`
+-- Estrutura para tabela `anamnese_gestacional`
 --
 
 CREATE TABLE `anamnese_gestacional` (
@@ -54,7 +54,7 @@ CREATE TABLE `anamnese_gestacional` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `avaliacao_paciente_maior`
+-- Estrutura para tabela `avaliacao_paciente_maior`
 --
 
 CREATE TABLE `avaliacao_paciente_maior` (
@@ -64,7 +64,7 @@ CREATE TABLE `avaliacao_paciente_maior` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `avaliacao_paciente_menor`
+-- Estrutura para tabela `avaliacao_paciente_menor`
 --
 
 CREATE TABLE `avaliacao_paciente_menor` (
@@ -74,17 +74,28 @@ CREATE TABLE `avaliacao_paciente_menor` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cadastro`
+-- Estrutura para tabela `cadastro`
 --
 
 CREATE TABLE `cadastro` (
-  `id_cadastro` int(11) NOT NULL
+  `cod_cadastro` int(11) NOT NULL,
+  `senha_cadastro` varchar(45) NOT NULL,
+  `nome_cadastro` varchar(45) NOT NULL,
+  `Acesso_cadastro` varchar(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `cadastro`
+--
+
+INSERT INTO `cadastro` (`cod_cadastro`, `senha_cadastro`, `nome_cadastro`, `Acesso_cadastro`) VALUES
+(123456, 'batata', 'Nylton', 's'),
+(1234567, 'batata', 'Gabriel', ' ');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `decisao_transporte`
+-- Estrutura para tabela `decisao_transporte`
 --
 
 CREATE TABLE `decisao_transporte` (
@@ -94,7 +105,7 @@ CREATE TABLE `decisao_transporte` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `emergencias`
+-- Estrutura para tabela `emergencias`
 --
 
 CREATE TABLE `emergencias` (
@@ -104,7 +115,7 @@ CREATE TABLE `emergencias` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `forma_conducao`
+-- Estrutura para tabela `forma_conducao`
 --
 
 CREATE TABLE `forma_conducao` (
@@ -114,7 +125,7 @@ CREATE TABLE `forma_conducao` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `localizacao_traumas_maior`
+-- Estrutura para tabela `localizacao_traumas_maior`
 --
 
 CREATE TABLE `localizacao_traumas_maior` (
@@ -124,7 +135,7 @@ CREATE TABLE `localizacao_traumas_maior` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `localizacao_traumas_menor`
+-- Estrutura para tabela `localizacao_traumas_menor`
 --
 
 CREATE TABLE `localizacao_traumas_menor` (
@@ -134,7 +145,7 @@ CREATE TABLE `localizacao_traumas_menor` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `materiais_utilizados`
+-- Estrutura para tabela `materiais_utilizados`
 --
 
 CREATE TABLE `materiais_utilizados` (
@@ -144,7 +155,7 @@ CREATE TABLE `materiais_utilizados` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `objetos_recolhidos`
+-- Estrutura para tabela `objetos_recolhidos`
 --
 
 CREATE TABLE `objetos_recolhidos` (
@@ -154,7 +165,7 @@ CREATE TABLE `objetos_recolhidos` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `paciente`
+-- Estrutura para tabela `paciente`
 --
 
 CREATE TABLE `paciente` (
@@ -180,7 +191,7 @@ CREATE TABLE `paciente` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `problemas_suspeitos`
+-- Estrutura para tabela `problemas_suspeitos`
 --
 
 CREATE TABLE `problemas_suspeitos` (
@@ -190,7 +201,7 @@ CREATE TABLE `problemas_suspeitos` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `procedimentos_efetuados`
+-- Estrutura para tabela `procedimentos_efetuados`
 --
 
 CREATE TABLE `procedimentos_efetuados` (
@@ -200,7 +211,7 @@ CREATE TABLE `procedimentos_efetuados` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `sinais_e_sintomas`
+-- Estrutura para tabela `sinais_e_sintomas`
 --
 
 CREATE TABLE `sinais_e_sintomas` (
@@ -210,12 +221,22 @@ CREATE TABLE `sinais_e_sintomas` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `sinais_vitais`
+-- Estrutura para tabela `sinais_vitais`
 --
 
 CREATE TABLE `sinais_vitais` (
   `id_sinais_vitais` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Índices para tabelas despejadas
+--
+
+--
+-- Índices de tabela `cadastro`
+--
+ALTER TABLE `cadastro`
+  ADD PRIMARY KEY (`cod_cadastro`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
