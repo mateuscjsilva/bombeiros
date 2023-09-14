@@ -57,23 +57,23 @@
           <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
         </div><!-- Fim do cabeçalho da pagina "" -->
 
-        <div class="slide-body centro"><!--inicio do corpo da página de ""-->
-          
+        <div class="slide-body centro"><!--inicio do corpo da página de Paciente-->
+        <form method="post">
           <div class="linha centro" style="justify-content: space-between;width: 310px;">
             <div class="coluna">
               <span style="margin-left: 15px;">Data</span>
-              <input class="circulo" style="width: 140px;height: 40px;">
+              <input class="circulo" type="date" id="data_paciente" style="width: 140px;height: 40px;">
             </div>
             <div class="coluna">
               <span style="margin-left: 15px;">Sexo</span>
               <div class="quadrado linha centro" style="justify-content: space-evenly;width: 140px;height: 40px;">
                 <div class="linha centro">
                   <span style="font-size: 10px;">M</span>
-                  <input type="checkbox" class="checkbox">
+                  <input type="radio" class="checkbox">
                 </div>
                 <div class="linha centro">
                   <span style="font-size: 10px;">F</span>
-                  <input type="checkbox" class="checkbox">
+                  <input type="radio" class="checkbox">
                 </div>
               </div>
             </div>
@@ -81,50 +81,58 @@
 
           <div class="coluna" style="width:310px;margin-top: 10px;">
               <span style="margin-left: 15px;">Nome Hospital:</span>
-              <div style="justify-content: start;"><input type="text" class="circulo" style="width: 300px;height: 40px;"></div>
+              <div style="justify-content: start;">
+                <input type="text" id="nome_hospital_paciente" class="circulo" style="width: 300px;height: 40px;">
+              </div>
           </div>
 
           <div class="linha" style="width: 310px;justify-content: space-between;margin-top: 10px;">
             <div class="coluna">
               <span style="margin-left: 15px;">Nome:</span>
-              <input type="text" class="circulo" style="width: 200px;height: 40px;">
+              <input type="text"id="nome_paciente" class="circulo" style="width: 200px;height: 40px;">
             </div>
             <div class="coluna">
               <span style="margin-left: 15px;">Idade:</span>
-              <input type="number" class="circulo" style="width: 70px;height: 40px;">
+              <input type="number" id="idade_paciente" class="circulo" style="width: 70px;height: 40px;">
             </div>
           </div>
 
           <div class="coluna" style="width:310px;margin-top: 10px;">
             <span style="margin-left: 15px;">RG/CPF:</span>
-            <div style="justify-content: start;"><input type="text" class="circulo" style="width: 300px;height: 40px;"></div>
+            <div style="justify-content: start;">
+              <input type="text" id="rg_cpf_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
           </div>
 
           <div class="coluna" style="width:310px;margin-top: 10px;">
             <span style="margin-left: 15px;">Fone:</span>
-            <div style="justify-content: start;"><input type="text" class="circulo" style="width: 300px;height: 40px;"></div>
+            <div style="justify-content: start;">
+              <input type="text" id="fone_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
           </div>
 
           <div class="linha" style="width: 310px;justify-content: space-between;margin-top: 10px;">
             <div class="coluna">
               <span style="margin-left: 15px;">Acompanhante:</span>
-              <input type="text" class="circulo" style="width: 200px;height: 40px;">
+              <input type="text" id="acompanhante_paciente" class="circulo" style="width: 200px;height: 40px;">
             </div>
             <div class="coluna">
               <span style="margin-left: 15px;">Idade:</span>
-              <input type="number" class="circulo" style="width: 70px;height: 40px;">
+              <input type="number" id="idade_acompanhante_paciente" class="circulo" style="width: 70px;height: 40px;">
             </div>
           </div>
 
           <div class="coluna" style="width:310px;margin-top: 10px;">
             <span style="margin-left: 15px;">Local de Ocorrência:</span>
-            <div style="justify-content: start;"><input type="text" class="circulo" style="width: 300px;height: 40px;"></div>
+            <div style="justify-content: start;">
+              <input type="text" id="local_ocorrencia_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
           </div>
           
           <div class="linha" style="width: 310px;justify-content: space-between;margin-top: 10px;">
             <div class="coluna">
               <span style="margin-left: 15px;">N°USB:</span>
-              <input class="circulo" style="width: 250px;height: 40px;">
+              <input type="text" id="n_usab_paciente" class="circulo" style="width: 250px;height: 40px;">
             </div>
             <div class="coluna centro">
               <span>CÓD.UR</span>
@@ -135,7 +143,7 @@
           <div class="linha" style="width: 310px;justify-content: space-between;margin-top: 10px;">
             <div class="coluna">
               <span style="margin-left: 15px;">N°OCORR:</span>
-              <input class="circulo" style="width: 250px;height: 40px;">
+              <input type="text" id="n_ocorr_paciente" class="circulo" style="width: 250px;height: 40px;">
             </div>
             <div class="coluna centro">
               <span>CÓD.PS</span>
@@ -145,24 +153,34 @@
 
           <div class="coluna" style="width:310px;margin-top: 10px;">
             <span style="margin-left: 15px;">DESP:</span>
-            <div style="justify-content: start;"><input type="text" class="circulo" style="width: 300px;height: 40px;"></div>
+            <div style="justify-content: start;">
+              <input type="text" id="desp_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
           </div>
 
           <div class="coluna" style="width:310px;margin-top: 10px;">
             <span style="margin-left: 15px;">H.CH:</span>
-            <div style="justify-content: start;"><input type="text" class="circulo" style="width: 300px;height: 40px;"></div>
+            <div style="justify-content: start;">
+              <input type="text" id="h_ch_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
           </div>
 
           <div class="coluna" style="width:310px;margin-top: 10px;">
             <span style="margin-left: 15px;">KM FINAL:</span>
-            <div style="justify-content: start;"><input type="text" class="circulo" style="width: 300px;height: 40px;"></div>
+            <div style="justify-content: start;">
+              <input type="text" id="km_final_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
           </div>
 
           <div class="coluna" style="width:310px;margin-top: 10px;">
             <span style="margin-left: 15px;">CÓD.SIA/SUS:</span>
-            <div style="justify-content: start;"><input type="text" class="circulo" style="width: 300px;height: 40px;"></div>
+            <div style="justify-content: start;">
+              <input type="text" id="cod_sia_sus_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
           </div>
-        </div><!--Fim do corpo da página de ""-->
+          <input value="Testar" type="button" onclick="PacienteRegistro()" style="margin-top: 20px; background-color: white; border-radius: 20px;">
+        </form>
+        </div><!--Fim do corpo da página de Paciente-->
 
       </div>
 
@@ -1756,6 +1774,11 @@
 </form>
 
 </body>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="JS/index.js"></script>
   <script src="JS/swiper.js"></script>
   <script src="JS/rolagem.js"></script>
+  
+  
+  
 </html>
