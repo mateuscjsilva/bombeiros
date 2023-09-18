@@ -1,6 +1,6 @@
 function PacienteRegistro(){
 
-    var Data = $('#data_paciente').val();
+    var Data = $('#data_paciente').val();/*Input type text*/
     var NomeHospitalPaciente = $('#nome_hospital_paciente').val();
     var NomePaciente = $('#nome_paciente').val();
     var IdadePaciente = $('#idade_paciente').val();
@@ -15,17 +15,30 @@ function PacienteRegistro(){
     var HChPaciente = $('#h_ch_paciente').val();
     var KmFinalPaciente = $('#km_final_paciente').val();
     var CodSiaSusPaciente = $('#cod_sia_sus_paciente').val();
-    var SexoPaciente = "";
 
-    
+    var SexoPaciente = "";/*Input type radio*/
     if (document.getElementById("sexo_paciente_m").checked) {
         SexoPaciente = document.getElementById("sexo_paciente_m").value;
     } else if (document.getElementById("sexo_paciente_f").checked) {
         SexoPaciente = document.getElementById("sexo_paciente_f").value;
     }
 
-    console.log(SexoPaciente);
+    var CodUrCheckbox = document.getElementById("cod_ur");/*Input type Checkbox*/
+    var CodUrChecked = CodUrCheckbox.checked;
+    if (CodUrChecked) {
+        var CodUr = 's';
+    } else {
+        var CodUr = 'n';
+    }
 
+    var CodPsCheckbox = document.getElementById("cod_ps");/*Input type Checkbox*/
+    var CodPsChecked = CodPsCheckbox.checked;
+    if (CodPsChecked) {
+        var CodPs = 's';
+    } else {
+        var CodPs = 'n';
+    }
+    
      $.ajax({
         url: 'PHP/tabela-paciente.php',
         method: 'POST',
@@ -41,7 +54,9 @@ function PacienteRegistro(){
             IdadeAcompanhantePaciente: IdadeAcompanhantePaciente,
             LocalOcorrenciaPaciente: LocalOcorrenciaPaciente,
             NUsbPaciente: NUsbPaciente,
+            CodUr: CodUr,
             NOcorrPaciente: NOcorrPaciente,
+            CodPs: CodPs,
             DespPaciente: DespPaciente,
             HChPaciente: HChPaciente,
             KmFinalPaciente: KmFinalPaciente,
@@ -53,7 +68,6 @@ function PacienteRegistro(){
     });
     
 };
-
 function SexoMasculino() {
     var sexo_paciente_f = document.getElementById("sexo_paciente_f"); 
     sexo_paciente_f.checked = false;

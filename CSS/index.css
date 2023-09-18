@@ -134,6 +134,20 @@ html {
   border-bottom: 1px solid #0667E8;
   outline: none;
 }
+.radio{
+  border-radius: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #0667E8;
+  outline: none;
+  cursor: pointer;
+}
+.radio:checked{
+  background-color: #0667E8;
+}
 /*------------------------------------------CSS-PAGINAS------------------------------------------*/
 .slide1 {
   margin: 0;
