@@ -498,10 +498,155 @@ html {
   width: 90%;
   height: 80vh;
   margin-left: 20px;
-  background-color: #0668e8b7;
-  position: absolute;
+  background-color: #0668e800;
+  position: center;
   top: 100px;
   display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.conteudo
+{
+  width: 90%;
+  height: 10vh;
+  background-color: #c9c6c600;
+  position: absolute;
+  margin: 0px;
+  top: 90px;
+  display: flex;
+  /*justify-content: center;*/
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  
+}
+.conteudo1
+{
+  width: 90%;
+  height: 10vh;
+  background-color: #c9c6c600;
+  position: absolute;
+  margin: 0px;
+  top: 120px;
+  display: flex;
+  /*justify-content: center;*/
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  
+}
+.linha2
+{
+width: 60%;
+height: 0.2%;
+background-color: #0062e2;
+position: absolute;
+top: 170px;
+}
+.conteudo2
+{
+  width: 90%;
+  height: 10vh;
+  background-color: #c9c6c600;
+  position: absolute;
+  margin: 0px;
+  top: 270px;
+  display: flex;
+  /*justify-content: center;*/
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  
+}
+.linha1
+{
+width: 60%;
+height: 0.2%;
+background-color: #0062e2;
+position: absolute;
+top: 435px;
+}
+.conteudo3
+{
+  width: 90%;
+  height: 10vh;
+  background-color: #c9c6c600;
+  position: absolute;
+  margin: 0px;
+  top: 420px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  
+}
+.conteudo4
+{
+  width: 90%;
+  height: 10vh;
+  background-color: #c9c6c600;
+  position: absolute;
+  margin: 0px;
+  top: 450px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  
+}
+.conteudo5
+{
+  width: 90%;
+  height: 10vh;
+  background-color: #c9c6c600;
+  position: absolute;
+  margin: 0px;
+  top: 480px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  
+}
+.conteudo6
+{
+  width: 90%;
+  height: 10vh;
+  background-color: #c9c6c600;
+  position: absolute;
+  margin: 0px;
+  top: 510px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  
+}
+.conteudo7
+{
+  width: 90%;
+  height: 10vh;
+  background-color: #c9c6c600;
+  position: absolute;
+  margin: 0px;
+  top: 540px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  
 }
 .confirma
 {

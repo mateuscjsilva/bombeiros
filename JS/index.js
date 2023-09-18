@@ -16,10 +16,10 @@ function PacienteRegistro(){
     var KmFinalPaciente = $('#km_final_paciente').val();
     var CodSiaSusPaciente = $('#cod_sia_sus_paciente').val();
     var SexoPaciente = $['#sexo_paciente'];
-    if ($SexoPaciente === 'm') {
-        SexoPaciente = 'm'
+    if (SexoPaciente === 'm') {
+        SexoPaciente = 'm';
     } elseif ($SexoPaciente === 'f'){
-        SexoPaciente = 'f'
+        SexoPaciente = 'f';
     }
 
     console.log(SexoPaciente);
