@@ -15,14 +15,21 @@ function PacienteRegistro(){
     var HChPaciente = $('#h_ch_paciente').val();
     var KmFinalPaciente = $('#km_final_paciente').val();
     var CodSiaSusPaciente = $('#cod_sia_sus_paciente').val();
-    
-    console.log(Data);
+    var SexoPaciente = $['#sexo_paciente'];
+    if ($SexoPaciente === 'm') {
+        SexoPaciente = 'm'
+    } elseif ($SexoPaciente === 'f'){
+        SexoPaciente = 'f'
+    }
+
+    console.log(SexoPaciente);
 
      $.ajax({
         url: 'PHP/tabela-paciente.php',
         method: 'POST',
         data: {
             Data: Data,
+            SexoPaciente: SexoPaciente,
             NomeHospitalPaciente: NomeHospitalPaciente,
             NomePaciente: NomePaciente,
             IdadePaciente: IdadePaciente,
