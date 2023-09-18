@@ -3,6 +3,7 @@ include("conecta.php");
 
 $NomeHospitalPaciente = $_POST['NomeHospitalPaciente'];
 $Data = $_POST['Data'];
+$SexoPaciente = $_POST['SexoPaciente'];
 $NomePaciente = $_POST['NomePaciente'];
 $IdadePaciente = $_POST['IdadePaciente'];
 $RgCpfPaciente = $_POST['RgCpfPaciente'];
