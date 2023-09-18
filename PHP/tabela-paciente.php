@@ -19,15 +19,15 @@ $KmFinalPaciente = $_POST['KmFinalPaciente'];
 $CodSiaSusPaciente = $_POST['CodSiaSusPaciente'];
 
 $stmt = $pdo->prepare("INSERT INTO paciente
-(nome_hospital_paciente, data_paciente,
+(nome_hospital_paciente, data_paciente, sexo_paciente,
 nome_paciente, idade_paciente, rg_cpf_paciente,
 fone_paciente, acompanhante_paciente, idade_acompanhante_paciente,
 local_ocorrencia_paciente, n_usb_paciente, n_ocorr_paciente,
 desp_paciente, h_ch_paciente, km_final_paciente,
 cod_sia_sus_paciente) VALUES 
-(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 $stmt->execute([
-    $NomeHospitalPaciente, $Data, $NomePaciente, $IdadePaciente,
+    $NomeHospitalPaciente, $Data, $SexoPaciente, $NomePaciente, $IdadePaciente,
     $RgCpfPaciente, $FonePaciente, $AcompanhantePaciente, $IdadeAcompanhantePaciente,
     $LocalOcorrenciaPaciente, $NUsbPaciente, $NOcorrPaciente, $DespPaciente, 
     $HChPaciente, $KmFinalPaciente, $CodSiaSusPaciente

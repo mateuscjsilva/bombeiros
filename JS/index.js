@@ -15,11 +15,13 @@ function PacienteRegistro(){
     var HChPaciente = $('#h_ch_paciente').val();
     var KmFinalPaciente = $('#km_final_paciente').val();
     var CodSiaSusPaciente = $('#cod_sia_sus_paciente').val();
-    var SexoPaciente = $['#sexo_paciente'];
-    if (SexoPaciente === 'm') {
-        SexoPaciente = 'm';
-    } elseif ($SexoPaciente === 'f'){
-        SexoPaciente = 'f';
+    var SexoPaciente = "";
+
+    
+    if (document.getElementById("sexo_paciente_m").checked) {
+        SexoPaciente = document.getElementById("sexo_paciente_m").value;
+    } else if (document.getElementById("sexo_paciente_f").checked) {
+        SexoPaciente = document.getElementById("sexo_paciente_f").value;
     }
 
     console.log(SexoPaciente);
@@ -51,6 +53,12 @@ function PacienteRegistro(){
     });
     
 };
+
+function SexoMasculino() {
+    var cartaoPagamento = document.getElementById("cartaoPagamento"); 
+    cartaoPagamento.checked = false;
+  }  
+
 function TermoDeRecusa(){
 
     var NomeTermoRecusa = $('#Nome_Recusa').val();
