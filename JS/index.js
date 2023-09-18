@@ -44,5 +44,39 @@ function PacienteRegistro(){
     });
     
 };
+function TermoDeRecusa(){
+
+    var NomeTermoRecusa = $('#Nome_Recusa').val();
+    var IdentidadeRecusa = $('#Identidade_Recusa').val();
+    var CpfRescusa = $('#Cpf_Recusa').val();
+    var AssinaturaRecusa = $('#Assinatura_Recusa').val();
+    var TestemunhaRecusa = $('#Testemunha_Recusa').val();
+    var DocRecusa = $('#Doc_Recusa').val();
+    var TestemunhaRecusa2 = $('#Testemunha_Recusa_2').val();
+    var DocRecusa2 = $('#Doc_Recusa_2').val();
+    
+    
+    console.log(Data);
+
+     $.ajax({
+        url: 'PHP/Termo_de_recusa.php',
+        method: 'POST',
+        data: {
+            NomeTermoRecusa: NomeTermoRecusa,
+            IdentidadeRecusa: IdentidadeRecusa,
+            CpfRescusa: CpfRescusa,
+            AssinaturaRecusa: AssinaturaRecusa,
+            TestemunhaRecusa: TestemunhaRecusa,
+            DocRecusa: DocRecusa,
+            TestemunhaRecusa2: TestemunhaRecusa2,
+            DocRecusa2: DocRecusa2,
+            
+        },
+        dataType: 'json'
+    }).done(function() {
+        alert("alguma coisa deu!!");
+    });
+    
+};
 
 
