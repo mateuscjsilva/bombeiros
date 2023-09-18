@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>NOAR - Ficha de Ocorrência</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="IMAGENS/logo_medicina.png" type="image/png">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="CSS/index.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+</head>
+<body>
+  <div id="barra-Lateral coluna" class="barra-Lateral">
+    <div class="navigation justify" onclick="navigateToSlide(1)" style="height: 30px;">Paciente</div>
+    <div class="navigation justify" onclick="navigateToSlide(2)" style="height: 30px;">Emergências</div>
+    <div class="navigation justify" onclick="navigateToSlide(3)" style="height: 30px;">Avaliação Do Paciente</div>
+    <div class="navigation justify" onclick="navigateToSlide(4)" style="height: 30px;">Forma de Condução</div>
+    <div class="navigation justify" onclick="navigateToSlide(5)" style="height: 30px;">Decisão de Transporte</div>
+    <div class="navigation justify" onclick="navigateToSlide(6)" style="height: 30px;">Problemas Suspeitos</div>
+    <div class="navigation justify" onclick="navigateToSlide(7)" style="height: 30px;">Sinais Vitais</div>
+    <div class="navigation justify" onclick="navigateToSlide(8)" style="height: 30px;">Localização dos Traumas</div>
+    <div class="navigation justify" onclick="navigateToSlide(9)" style="height: 30px;">Objeto Recolhidos</div>
+    <div class="navigation justify" onclick="navigateToSlide(10)" style="height: 30px;">Sinais e Sintomas</div>
+    <div class="navigation justify" onclick="navigateToSlide(11)" style="height: 30px;">Procedimentos Efetuados</div>
+    <div class="navigation justify" onclick="navigateToSlide(12)" style="height: 30px;">Materiais Utilizados(A)</div>
+    <div class="navigation justify" onclick="navigateToSlide(13)" style="height: 30px;">Materiais Utilizados(B)</div>
+    <div class="navigation justify" onclick="navigateToSlide(14)" style="height: 30px;">Anamnese</div>
+    <div class="navigation justify" onclick="navigateToSlide(15)" style="height: 30px;">Anamnese Gestacional</div>
+    <div class="navigation justify" onclick="navigateToSlide(16)" style="height: 30px;">Termo de Recusa de Ate...</div>
+    <div class="navigation justify" onclick="navigateToSlide(17)" style="height: 30px;">Observações Importantes</div>
+    <div class="navigation justify" onclick="navigateToSlide(18)" style="height: 30px;">Avaliação Cinemática</div>
+    <div class="navigation justify" onclick="navigateToSlide(19)" style="height: 30px;">Responsável Preencimento</div>
+    <div class="navigation justify" onclick="navigateToSlide(20)" style="height: 30px;">Slide 21</div>
+    <div class="navigation justify" onclick="navigateToSlide(21)" style="height: 30px;">Slide 22</div>
+    <div class="navigation justify" onclick="navigateToSlide(22)" style="height: 30px;">Slide 23</div>
+    <div class="navigation justify" onclick="navigateToSlide(23)" style="height: 30px;">Slide 24</div>
+    <div class="navigation justify" onclick="navigateToSlide(24)" style="height: 30px;">Slide 25</div>
+    <div class="navigation justify" onclick="navigateToSlide(25)" style="height: 30px;">Slide 26</div>
+    <div class="navigation justify" onclick="navigateToSlide(26)" style="height: 30px;">Slide 27</div>
+    <div class="navigation justify" onclick="navigateToSlide(27)" style="height: 30px;">Slide 28</div>
+    <div class="navigation justify" onclick="navigateToSlide(28)" style="height: 30px;">Slide 29</div>
+    <div class="navigation justify" onclick="navigateToSlide(29)" style="height: 30px;" style="padding-bottom: 50px;">Slide 30</div>
+</div>
+<form action="index.php" method="post">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide1"><!---------------------------------------------------------Inicio da página de Paciente --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Paciente
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro"><!--inicio do corpo da página de Paciente-->
+        <form method="post">
+          <div class="linha centro" style="justify-content: space-between;width: 310px;">
+            <div class="coluna">
+              <span style="margin-left: 15px;">Data</span>
+              <input class="circulo" type="date" id="data_paciente" style="width: 140px;height: 40px;">
+            </div>
+            <div class="coluna">
+              <span style="margin-left: 15px;">Sexo</span>
+              <div class="quadrado linha centro" style="justify-content: space-evenly;width: 140px;height: 40px;">
+                <div class="linha centro">
+                  <span style="font-size: 10px;">M</span>
+                  <input type="radio" id="sexo_paciente_m" onclick="SexoMasculino()" class="radio" value="m">
+                </div>
+                <div class="linha centro">
+                  <span style="font-size: 10px;">F</span>
+                  <input type="radio" id="sexo_paciente_f" onclick="SexoFeminino()" class="radio" value="f">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="coluna" style="width:310px;margin-top: 10px;">
+              <span style="margin-left: 15px;">Nome Hospital:</span>
+              <div style="justify-content: start;">
+                <input type="text" id="nome_hospital_paciente" class="circulo" style="width: 300px;height: 40px;">
+              </div>
+          </div>
+
+          <div class="linha" style="width: 310px;justify-content: space-between;margin-top: 10px;">
+            <div class="coluna">
+              <span style="margin-left: 15px;">Nome:</span>
+              <input type="text"id="nome_paciente" class="circulo" style="width: 200px;height: 40px;">
+            </div>
+            <div class="coluna">
+              <span style="margin-left: 15px;">Idade:</span>
+              <input type="number" id="idade_paciente" class="circulo" style="width: 70px;height: 40px;">
+            </div>
+          </div>
+
+          <div class="coluna" style="width:310px;margin-top: 10px;">
+            <span style="margin-left: 15px;">RG/CPF:</span>
+            <div style="justify-content: start;">
+              <input type="text" id="rg_cpf_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
+          </div>
+
+          <div class="coluna" style="width:310px;margin-top: 10px;">
+            <span style="margin-left: 15px;">Fone:</span>
+            <div style="justify-content: start;">
+              <input type="text" id="fone_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
+          </div>
+
+          <div class="linha" style="width: 310px;justify-content: space-between;margin-top: 10px;">
+            <div class="coluna">
+              <span style="margin-left: 15px;">Acompanhante:</span>
+              <input type="text" id="acompanhante_paciente" class="circulo" style="width: 200px;height: 40px;">
+            </div>
+            <div class="coluna">
+              <span style="margin-left: 15px;">Idade:</span>
+              <input type="number" id="idade_acompanhante_paciente" class="circulo" style="width: 70px;height: 40px;">
+            </div>
+          </div>
+
+          <div class="coluna" style="width:310px;margin-top: 10px;">
+            <span style="margin-left: 15px;">Local de Ocorrência:</span>
+            <div style="justify-content: start;">
+              <input type="text" id="local_ocorrencia_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
+          </div>
+          
+          <div class="linha" style="width: 310px;justify-content: space-between;margin-top: 10px;">
+            <div class="coluna">
+              <span style="margin-left: 15px;">N°USB:</span>
+              <input type="text" id="n_usab_paciente" class="circulo" style="width: 250px;height: 40px;">
+            </div>
+            <div class="coluna centro">
+              <span>CÓD.UR</span>
+              <input type="checkbox" id="cod_ur" class="checkbox" style="width: 20px;height: 20px;">
+            </div>  
+          </div>
+
+          <div class="linha" style="width: 310px;justify-content: space-between;margin-top: 10px;">
+            <div class="coluna">
+              <span style="margin-left: 15px;">N°OCORR:</span>
+              <input type="text" id="n_ocorr_paciente" class="circulo" style="width: 250px;height: 40px;">
+            </div>
+            <div class="coluna centro">
+              <span>CÓD.PS</span>
+              <input type="checkbox" id="cod_ps" class="checkbox" style="width: 20px;height: 20px;">
+            </div>  
+          </div>
+
+          <div class="coluna" style="width:310px;margin-top: 10px;">
+            <span style="margin-left: 15px;">DESP:</span>
+            <div style="justify-content: start;">
+              <input type="text" id="desp_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
+          </div>
+
+          <div class="coluna" style="width:310px;margin-top: 10px;">
+            <span style="margin-left: 15px;">H.CH:</span>
+            <div style="justify-content: start;">
+              <input type="text" id="h_ch_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
+          </div>
+
+          <div class="coluna" style="width:310px;margin-top: 10px;">
+            <span style="margin-left: 15px;">KM FINAL:</span>
+            <div style="justify-content: start;">
+              <input type="text" id="km_final_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
+          </div>
+
+          <div class="coluna" style="width:310px;margin-top: 10px;">
+            <span style="margin-left: 15px;">CÓD.SIA/SUS:</span>
+            <div style="justify-content: start;">
+              <input type="text" id="cod_sia_sus_paciente" class="circulo" style="width: 300px;height: 40px;">
+            </div>
+          </div>
+          <input value="Testar" type="button" onclick="PacienteRegistro()" style="margin-top: 20px; background-color: white; border-radius: 20px;">
+        </form>
+        </div><!--Fim do corpo da página de Paciente-->
+      </div>
+      
+
+      <div class="swiper-slide slide2"><!---------------------------------------------------------Inicio da página de Emergências --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Emergências
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Emergência médica</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Com meio de transporte</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Causado por animais</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Incêndio</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Afogamento</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Deslizamento / Desmoronamento</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Agressão</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Queda de altura 2M</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Tentativa  de
+            suicídio</span></div>
+          <div class="linha justify">
+            <input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Queda própria altura</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Atropelamento</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Choque elétrico</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Desabamento</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Doméstico</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Esportivo</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Intoxicação</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Queda de bicicleta</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Queda de moto</span></div>
+          <div class="linha justify">
+            <input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Queda-menor-2M</span>
+          </div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Trabalho</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Trânsferencia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Outro</span></div>
+         
+        </div><!--Fim do corpo da página de ""-->
+      </div>
+      <div class="swiper-slide slide3"><!---------------------------------------------------------Inicio da página de Avaliação do Paciente --------------------------------------------------------->
+
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Avaliação Do Paciente
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div>
+        <div class="cabecalho2 centro">
+          Nível de Consciência
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro" style="padding-top: 40px;"><!--inicio do corpo da página de ""-->
+          <div class="quadrado linha centro" style="width: 80%;height: 30px;justify-content: space-evenly;">
+            <span class="centro" style="width: 49%;height: 100%;">Menor de 5</span>
+            <div style="width: 2px;height: 100%;background-color: #0667E8;"></div>
+            <span class="centro" style="width: 49%;height: 100%;">Maior de 5</span>
+          </div>
+
+        <div id="maiorque5paciente" style="display: none;" class="coluna">
+          <div class="linha centro" style="width: 100%;margin-top: 20px;">
+            <div class="circulo centro" style="width: 80px;height: 100%;background-color: #0667E8;border-radius: 10px;color: white;"><span class="centro" style="width: 60px;text-align: center;">Abertura Ocular</span></div>
+            <div class="coluna" style="margin-left: 3px;">
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Espontânea</span></div><input type="checkbox" class="checkbox">1</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Comando Verbal</span></div><input type="checkbox" class="checkbox">2</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Estímulo Doloroso</span></div><input type="checkbox" class="checkbox">3</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;"><span style="color: white;font-size: 12px;">Nenhuma</span></div><input type="checkbox" class="checkbox">4</div>
+            </div>
+          </div>
+
+          <div class="linha centro" style="width: 100%;margin-top: 20px;">
+            <div class="circulo centro" style="width: 80px;height: 100%;background-color: #0667E8;border-radius: 10px;color: white;"><span style="text-align: center;">Resposta Verbal</span></div>
+            <div class="coluna" style="margin-left: 3px;">
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Orientado</span></div><input type="checkbox" class="checkbox">1</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Confuso</span></div><input type="checkbox" class="checkbox">2</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Palavras Inapropriadas</span></div><input type="checkbox" class="checkbox">3</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Palavras Incompreensíveis</span></div><input type="checkbox" class="checkbox">4</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;"><span style="color: white;font-size: 12px;">Nenhuma</span></div><input type="checkbox" class="checkbox">5</div>
+            </div>
+          </div>
+
+          <div class="linha centro" style="width: 100%;margin-top: 20px;">
+            <div class="circulo centro" style="width: 80px;height: 100%;background-color: #0667E8;border-radius: 10px;color: white;"><span style="text-align: center;">Resposta Motora</span></div>
+            <div class="coluna" style="margin-left: 3px;">
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Obedece Comandos</span></div><input type="checkbox" class="checkbox">1</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Localiza dor</span></div><input type="checkbox" class="checkbox">2</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Movimento de retirada</span></div><input type="checkbox" class="checkbox">3</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Flexão Anormal</span></div><input type="checkbox" class="checkbox">4</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Extensão Anormal</span></div><input type="checkbox" class="checkbox">5</div>
+              <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;"><span style="color: white;font-size: 12px;">Nenhuma</span></div><input type="checkbox" class="checkbox">6</div>
+            </div>
+          </div>
+        </div>
+
+          <div id="menorque5paciente" style="display: flex;" class="coluna">
+            <div class="linha centro" style="width: 100%;margin-top: 20px;">
+              <div class="circulo centro" style="width: 80px;height: 100%;background-color: #0667E8;border-radius: 10px;color: white;"><span class="centro" style="width: 60px;">Abertura Ocular</span></div>
+              <div class="coluna" style="margin-left: 3px;">
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Espontânea</span></div><input type="checkbox" class="checkbox">1</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Comando Verbal</span></div><input type="checkbox" class="checkbox">2</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Estímulo Doloroso</span></div><input type="checkbox" class="checkbox">3</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;"><span style="color: white;font-size: 12px;">Nenhuma</span></div><input type="checkbox" class="checkbox">4</div>
+              </div>
+            </div>
+  
+            <div class="linha centro" style="width: 100%;margin-top: 20px;">
+              <div class="circulo centro" style="width: 80px;height: 100%;background-color: #0667E8;border-radius: 10px;color: white;"><span style="margin-left: 20%;">Resposta Verbal</span></div>
+              <div class="coluna" style="margin-left: 3px;">
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Palavras e Frases Inapropriadas</span></div><input type="checkbox" class="checkbox">1</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Palavras Inapropriadas</span></div><input type="checkbox" class="checkbox">2</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Choro Persistentes ou Gritos</span></div><input type="checkbox" class="checkbox">3</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Sons Incompreensíveis</span></div><input type="checkbox" class="checkbox">4</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;"><span style="color: white;font-size: 12px;">Nenhuma</span></div><input type="checkbox" class="checkbox">5</div>
+              </div>
+            </div>
+  
+            <div class="linha centro" style="width: 100%;margin-top: 20px;">
+              <div class="circulo centro" style="width: 80px;height: 100%;background-color: #0667E8;border-radius: 10px;color: white;"><span style="margin-left: 20%;">Resposta Motora</span></div>
+              <div class="coluna" style="margin-left: 3px;">
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Obedece Comandos</span></div><input type="checkbox" class="checkbox">1</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Localiza dor/Estímulo Tatil</span></div><input type="checkbox" class="checkbox">2</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Retirada do Segmento Estimulado</span></div><input type="checkbox" class="checkbox">3</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Flexão Anormal(Decorticação)</span></div><input type="checkbox" class="checkbox">4</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;margin-bottom: 5px;"><span style="color: white;font-size: 12px;">Extensão Anormal(Decerebração)</span></div><input type="checkbox" class="checkbox">5</div>
+                <div class="linha"><div class="circulo centro" style="background-color: #0667E8;border-radius: 5px;width: 160px;height: 20px;"><span style="color: white;font-size: 12px;">Ausência(Paralisia Falecida, Hipônia)</span></div><input type="checkbox" class="checkbox">6</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="linha" style="margin-left: -5px;">
+            <div class="coluna centro" style="margin-top: 10px;">
+              <span style="font-size: 10px;">Total(GCS)(3-15)</span>
+              <input type="text" class="quadrado" style="width: 74px;height: 10px;">
+            </div>
+            <div style="width: 190px;"></div>
+          </div>
+          
+        </div><!--Fim do corpo da página de ""-->
+
+      </div><!-- Fim da página de "" -->
+
+      <div class="swiper-slide slide4"><!---------------------------------------------------------Inicio da página de Forma de Condução --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Forma de Condução
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro"><!--inicio do corpo da página de ""-->
+            <div class="linha circulo centro" style="background-color: #0667E8; border-radius: 5px; width: 250px; height: 90px;justify-content: space-evenly; ">
+              <div class="coluna centro" style="color: white;">
+                <span style="font-size: 13px;">DEITADA</span>
+                <input type="checkbox" class="checkbox-quadrado-azul">
+               </div>
+               <div class="coluna centro" style="color: white;">
+                <span style="font-size: 13px;">SEMI-DEITADA</span>
+                <input type="checkbox" class="checkbox-quadrado-azul">
+               </div>
+               <div class="coluna centro" style="color: white;">
+                <span style="font-size: 13px;">SENTADA</span>
+                <input type="checkbox" class="checkbox-quadrado-azul">
+               </div>   
+            </div>
+
+                <div class="linha circulo centro" style="color: white; background-color: #0667E8; border-radius: 5px; width: 250px; height: 50px;justify-content: space-evenly; margin-top: 20px;">
+                  <span style="font-size: 20px;"> A VITIMA ERA</span>
+                </div>
+
+           <div class="coluna circulo centro" style= "margin-top: 20px; background-color: #0667E8; border-radius: 5px; width: 250px; height: 400px;justify-content: space-evenly; ">
+            <div style="width:100%;">
+              <div class="linha centro" style="justify-content: space-around; width:100%;"> 
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Ciclista</span>
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Condutor-Moto</span>
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Gestante</span>
+              </div>
+                  <div class="linha centro" style="justify-content: space-around;width: 100%;">
+                        <div class="coluna centro" style="color: white;">
+                          <input type="checkbox" class="checkbox-quadrado-azul">
+                        </div>
+                        <div class="coluna centro" style="color: white;">                       
+                          <input type="checkbox" class="checkbox-quadrado-azul">
+                        </div>
+                          <div class="coluna centro" style="color: white;">
+                            <input type="checkbox" class="checkbox-quadrado-azul">
+                          </div>  
+                  </div>
+            </div>
+            <div style="width:100%;">
+              <div class="linha centro" style="justify-content: space-around; width:100%;"> 
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Pass Ban Frente</span>
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Pass Moto</span>
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Condutor-Carro</span>
+              </div>
+                  <div class="linha centro" style="justify-content: space-around;width: 100%;">
+                        <div class="coluna centro" style="color: white;">
+                          <input type="checkbox" class="checkbox-quadrado-azul">
+                        </div>
+                        <div class="coluna centro" style="color: white;">                       
+                          <input type="checkbox" class="checkbox-quadrado-azul">
+                        </div>
+                          <div class="coluna centro" style="color: white;">
+                            <input type="checkbox" class="checkbox-quadrado-azul">
+                          </div>  
+                  </div>
+            </div>
+            <div style="width:100%;">
+              <div class="linha centro" style="justify-content: space-around; width:100%;"> 
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Clinico</span>
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Trauma</span>
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Pass Ban Trás</span>
+              </div>
+                  <div class="linha centro" style="justify-content: space-around;width: 100%;">
+                        <div class="coluna centro" style="color: white;">
+                          <input type="checkbox" class="checkbox-quadrado-azul">
+                        </div>
+                        <div class="coluna centro" style="color: white;">                       
+                          <input type="checkbox" class="checkbox-quadrado-azul">
+                        </div>
+                          <div class="coluna centro" style="color: white;">
+                            <input type="checkbox" class="checkbox-quadrado-azul">
+                          </div>  
+                  </div>
+            </div>
+            <div style="width:100%;">
+              <div class="linha centro" style="justify-content: space-around; width:100%;"> 
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Pedestre</span>
+              </div>
+                  <div class="linha centro" style="justify-content: space-around;width: 100%;">
+                        <div class="coluna centro" style="color: white;">
+                          <input type="checkbox" class="checkbox-quadrado-azul">
+                        </div> 
+                  </div>
+            </div>           
+          </div>
+      </div>
+        </div><!--Fim do corpo da página de ""-->
+
+      <div class="swiper-slide slide5"><!---------------------------------------------------------Inicio da página de Decisão de Transporte --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Decisão de Transporte
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro"><!--inicio do corpo da página de ""-->
+          <div class="coluna centro" style= "background-color: #0667E8;  width: 340px; height: 200px; ">
+            <div style="width:100%;">
+              <div class="linha centro" style="justify-content: space-around; width:100%;"> 
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Crítico</span>
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Instável</span>
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Estavel</span>
+              </div>
+                  <div class="linha centro" style="justify-content: space-around;width: 100%;">
+                        <div class="coluna centro" style="color: white;">
+                          <input type="checkbox" style="width: 24px; height: 24px;" class="checkbox-quadrado-azul">
+                        </div>
+                        <div class="coluna centro" style="color: white;">                       
+                          <input type="checkbox" style="width: 24px; height: 24px;" class="checkbox-quadrado-azul">
+                        </div>
+                          <div class="coluna centro" style="color: white;">
+                            <input type="checkbox" style="width: 24px; height: 24px;" class="checkbox-quadrado-azul">
+                          </div>  
+                  </div>
+            </div>
+            <div style="width:100%;">
+              <div class="linha centro" style="justify-content: space-around; width:100%;"> 
+                <span class="centro" style="font-size: 13px;width: 20px;text-align: center; color: white;">Potencialmente Instável</span>
+               
+              </div>
+                  <div class="linha centro" style="justify-content: space-around;width: 100%;">
+                        <div class="coluna centro" style="color: white;">
+                          <input type="checkbox" style="width: 24px; height: 24px;" class="checkbox-quadrado-azul">
+                        </div>
+                  </div>
+            </div>
+          </div>
+          <div class="linha centro" style="width: 340px; height: 75px; background-color: #0667E8; margin-top: 20px;">
+            <span style="color: white; font-size: 25px;">Decisão de Transporte</span>
+          </div>
+            <div class="coluna centro" style="justify-content: space-around; height: 365px;">
+                <div class="linha centro" >
+                  <span>M:</span> <input type="text" class="circulo" style="width: 300px;height: 46px;">
+                </div>
+                <div class="linha centro">
+                  <span>S1:</span> <input type="text" class="circulo" style="width: 300px;height: 46px;">
+                </div>
+                <div class="linha centro">
+                  <span>S2:</span> <input type="text" class="circulo" style="width: 300px;height: 46px;">
+                </div>
+                <div class="linha centro">
+                  <span>S3:</span> <input type="text" class="circulo" style="width: 300px;height: 46px;">
+                </div>
+                <div class="linha centro">
+                  <span>Demante:</span> <input type="text" class="circulo" style="width: 250px;height: 46px;">
+                </div>
+            </div>
+        </div>
+        </div><!--Fim do corpo da página de ""-->
+
+      
+      <div class="swiper-slide slide6"><!---------------------------------------------------------Inicio da página de Problemas Suspeitos --------------------------------------------------------->
+
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Problemas Suspeitos
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro" style="padding: 0px;"><!--inicio do corpo da página de ""-->
+          <div class="circulo justify centro linha" style="width: 308px; height: 46px; border: none; background-color: #0667E8; margin-top: 30px;">
+            <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+            <div class="centro" style="width: 200px; height: 100%;"><span style="color: aliceblue;font-size: 20px;">Psiquiatrico</span></div>
+          </div>
+          <div class="circulo justify centro linha" style="width: 308px; height: 46px; border: none; background-color: #0667E8; margin-top: 30px;">
+            <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+            <div class="centro" style="width: 200px; height: 100%;"><span style="color: aliceblue;font-size: 20px;">Respiratório</span></div>
+          </div>
+          <div class="justify centro coluna">
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">DPOC</span></div>
+            </div>
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Inalação de fumaça</span></div>
+            </div>
+          </div>
+          <div class="circulo justify centro  linha" style="width: 308px; height: 46px; border: none; background-color: #0667E8; margin-top: 30px;">
+            <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+            <div class="centro" style="width: 200px; height: 100%;"><span style="color: aliceblue;font-size: 20px;">Diabetes</span></div>
+          </div>
+          <div class="justify centro coluna">
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Hiperglicemia</span></div>
+            </div>
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Hipoglicemia</span></div>
+            </div>
+          </div>
+          <div class="circulo justify centro linha" style="width: 308px; height: 46px; border: none; background-color: #0667E8; margin-top: 30px;">
+            <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+            <div class="centro" style="width: 200px; height: 100%;"><span style="color: aliceblue;font-size: 20px;">Obstétricos</span></div>
+          </div>
+          <div class="justify centro coluna">
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Parto Emergêncial</span></div>
+            </div>
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Gestante</span></div>
+            </div>
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Hemor.exceciva</span></div>
+            </div>
+          </div>
+          <div class="circulo justify centro linha" style="width: 308px; height: 46px; border: none; background-color: #0667E8; margin-top: 30px;">
+            <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+            <div class="centro" style="width: 200px; height: 100%;"><span style="color: aliceblue;font-size: 20px;">Transporte</span></div>
+          </div>
+          <div class="justify centro coluna">
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Aéreo</span></div>
+            </div>
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Clinico</span></div>
+            </div>
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Emergêncial</span></div>
+            </div>
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Pós-Trauma</span></div>
+            </div>
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Samu</span></div>
+            </div>
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Outros</span></div>
+            </div>
+            <div class="circulo justify centro linha" style="width: 280px; height: 36px; border-color:black ; background-color: #CDCECB; margin-top: 2px;">
+              <div class="centro" style="width: 24px; height: 100%;"><input type="checkbox" class="checkbox-quadrado-azul"></div>
+              <div class="centro" style="width: 200px; height: 100%;"><span style="color: black;font-size: 18px;">Sem remoção</span></div>
+            </div>
+          </div>
+          <div class="circulo justify centro coluna" style="width: 308px; height: 70px; border: none; background-color: #0667E8; margin-top: 30px;">
+            <div class="centro" style="width: 200px; height: 35px;"><span style="color: aliceblue;font-size: 20px;">Outro</span></div>
+            <input type="text">
+          </div>
+          
+          
+        </div><!--Fim do corpo da página de ""-->
+
+      </div><!-- Fim da página de "" -->
+
+      <div class="swiper-slide slide7"><!---------------------------------------------------------Inicio da página de Sinais Vitais --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Sinais Vitais
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro"><!--inicio do corpo da página de ""-->
+          <div>
+          <div class="coluna" style="width: 100%;">
+            <span style="color: black;margin-left: 15px;">Pressão Arterial</span>
+            <div class="linha"  >
+              <input type="text" class="input-linha" style="height: 40px;width: 120px;">
+              <span class="centro">x</span>
+              <input type="text" class="input-linha" style="height: 40px;width: 120px;">
+              <span class="centro">mmhg</span>
+            </div>
+          </div>
+          <div class="coluna" style="margin-top: 10px;width: 100%;">
+            <span style="color: black;margin-left: 15px;">Pulso</span>
+              <div class="linha">
+                <input type="text" class="input-linha" style="height: 40px;width: 150px;">
+                <span class="centro">BSPM</span>
+              </div>
+            </div>
+          <div class="coluna" style="margin-top: 10px;width: 100%;">
+            <span style="color: black;margin-left: 15px;">Respiração</span>
+              <div class="linha">
+                <input type="text" class="input-linha" style="height: 40px;width: 150px;">
+                <span class="centro">M.R.M.</span>
+              </div>
+          </div>
+          <div class="coluna" style="width: 100%;margin-top: 10px;">
+            <span style="color: black;margin-left: 15px;">Pressão Arterial</span>
+            <div class="linha">
+              <input type="text" class="input-linha" style="height: 40px;width: 120px;">
+              <span class="centro">%/HGT:</span>
+              <input type="text" class="input-linha" style="height: 40px;width: 120px;">
+            </div>
+          </div>
+          <div class="coluna" style="margin-top: 10px;width: 100%;">
+            <span style="color: black;margin-left: 15px;">Temperatura</span>
+              <div class="linha">
+                <input type="text" class="input-linha" style="height: 40px;width: 150px;">
+                <span class="centro">°C</span>
+                <div class="coluna centro" style="margin-left: 15px;">
+                  <span>Anormal</span>
+                  <input type="checkbox" class="checkbox" style="width: 20px;height: 20px;">
+                </div>  
+              </div>
+          </div>
+          <div class="linha quadrado centro" style="width: 100%;justify-content: space-evenly;height: 45px;margin-top: 20px;">
+            <div class="linha centro">
+              <span>>2seg</span>
+              <input type="checkbox" class="checkbox" style="width: 20px;height: 20px;">
+            </div>
+            <div class="linha centro">
+              <span><2seg</span>
+              <input type="checkbox" class="checkbox" style="width: 20px;height: 20px;">
+            </div>
+            <div class="linha centro">
+              <span>Normal</span>
+              <input type="checkbox" class="checkbox" style="width: 20px;height: 20px;">
+            </div>
+          </div>
+        </div>
+        </div><!--Fim do corpo da página de ""-->
+        </div>
+
+      <div class="swiper-slide slide8"><!---------------------------------------------------------Inicio da página de Localização dos Traumas --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Localização dos Traumas
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro"><!--inicio do corpo da página de ""-->
+      <div style="width: 100%; height: 1289px; justify-content: space-between; flex-direction: column;display: flex;"> 
+        <div class="centro coluna"> 
+          <div class="quadrado linha centro" style="width: 320px;height: 30px;">
+            <span class="centro" style="width: 49%;height: 100%;">Menor de 5</span>
+            <div style="width: 2px;height: 100%;background-color: #0667E8;"></div>
+            <span class="centro" style="width: 49%;height: 100%;">Maior de 5</span>
+          </div>
+              <div class="coluna centro" style="border-style:solid; border-color: #0667E8; width: 320px; height: 279px;  ">
+               <img src="IMAGENS/corpo-maior-5.png" style="width: 88%; ">
+               <img src="IMAGENS/corpo-menor-5.png" style="width: 88%; display: none;">
+              </div>
+              <div></div>
+              <div class="linha centro "  > 
+                <div class="coluna centro" >
+                  <div class="linha " style=" border-style:solid; border-color: #0667E8; width: 150px; height: 30px;">
+                    <img src="IMAGENS/Fraturas-Luxações-Entorses.png" width="25px" > 
+                    <span class="centro" style="font-size: 11px;">Fraturas/Luxações/Entorses</span>
+                  </div>
+                    <div class="linha " style=" border-style:solid; border-color: #0667E8; width: 150px; height: 30px;">
+                    <img src="IMAGENS/Ferimentos -Diversos.png" > 
+                    <span  class="centro" >Ferimentos Diversos</span>
+                  </div>
+                  <div class="linha " style=" border-style:solid; border-color: #0667E8; width: 150px; height: 30px;">
+                    <img src="IMAGENS/Hemorragias.png" width="30px" > 
+                    <span class="centro" >Hemorragias</span>
+                  </div>
+                  <div class="linha " style=" border-style:solid; border-color: #0667E8; width: 150px; height: 30px;">
+                    <img src="IMAGENS/Queimadura-de-1.png"width="30px" > 
+                    <span class="centro" >Queimadura de 1°</span>
+                  </div>
+                  <div class="linha " style=" border-style:solid; border-color: #0667E8; width: 150px; height: 30px;">
+                    <img src="IMAGENS/Queimadura-de-3.png"width="30px" > 
+                    <span class="centro" >Queimadura de 3°</span>
+                  </div>
+                </div>
+                        <div class="coluna centro" style="margin-bottom: 15px; margin-left: 5px;">
+                          <div class="linha " style=" border-style:solid; border-color: #0667E8; width: 150px; height: 30px;">
+                            <img src="IMAGENS/Queimadura-de-2.png"width="30px"> 
+                            <span class="centro" >Queimadura de 2°</span>
+                          </div>
+                          <div class="linha " style=" border-style:solid; border-color: #0667E8; width: 150px; height: 30px;">
+                            <img src="IMAGENS/Esviceração.png"width="25px" > 
+                            <span class="centro" >Esviceração</span>
+                          </div>
+                          <div class="linha " style=" border-style:solid; border-color: #0667E8; width: 150px; height: 30px;">
+                            <img src="IMAGENS/F.A.B-F.A.F.png"width="25px" > 
+                            <span class="centro" >F.A.B / F.A.F</span>
+                          </div>
+                          <div class="linha" style=" border-style:solid; border-color: #0667E8; width: 150px; height: 30px;">
+                            <img src="IMAGENS/Amputação.png"width="25px" > 
+                            <span class="centro" >Amputação</span>
+                          </div>
+                        </div>
+               </div>
+          </div>
+          <div>           
+              <div class="linha  centro" style="color: white; background-color: #0667E8;  width: 100%; height: 50px;">
+                  <span class=" coluna centro" style="font-size: 20px; text-align: center;"> Ferimentos/Fraturas/Entorses<br>Luxação/Contusão</span>
+                </div>
+                <div class="coluna centro"> 
+                  <table border="1" style="border-style:solid; border-color: #0667E8; width: 300px; ">
+                    <tr style="border-style:solid; border-color: #0667E8;">
+                      <th>Local</th>
+                      <th>Lado</th>
+                      <th>Face</th>
+                      <th>Tipo</th>
+                      
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8;" >
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8;">
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8;">
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                      </tr>
+                      <tr style="border-style:solid; border-color: #0667E8;">
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                      </tr>
+                      <tr style="border-style:solid; border-color: #0667E8;">
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                      </tr>
+                      <tr style="border-style:solid; border-color: #0667E8;">
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                      </tr>
+                      <tr style="border-style:solid; border-color: #0667E8;">
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                      </tr>
+                      <tr style="border-style:solid; border-color: #0667E8;">
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                      </tr>
+                      <tr style="border-style:solid; border-color: #0667E8;">
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                      </tr>
+                      <tr style="border-style:solid; border-color: #0667E8;">
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                        <td style="width: 100px; height: 25px;"></td>
+                      </tr>
+                  </table>
+                </div>
+            </div>
+            <div>
+                <div class="coluna centro">
+                  <table border="1" style="border-style:solid; border-color: #0667E8; width: 300px; ">
+                    <tr style="border-style:solid; border-color: #0667E8; width: 50px;">
+                      <th>Queimadura</th>
+                      <th>1°Grau</th>
+                      <th>2°Grau</th>
+                      <th>3°Grau</th>
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8; width: 50px;" >
+                        <td style="width: 50px; height: 25px;"> cabeça</td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+            
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8; width: 50px;" >
+                        <td style="width: 50px; height: 25px;"> pescoço</td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+            
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8; width: 50px;" >
+                        <td style="width: 50px; height: 25px;"> T.Ant</td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8; width: 50px;" >
+                        <td style="width: 50px; height: 25px;"> T.Pos</td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8; width: 50px;" >
+                        <td style="width: 50px; height: 25px;"> GENI</td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8; width: 50px;" >
+                        <td style="width: 50px; height: 25px;"> M.I.D</td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8; width: 50px;" >
+                        <td style="width: 50px; height: 25px;"> M.I.E</td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8; width: 50px;" >
+                        <td style="width: 50px; height: 25px;"> M.S.D</td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                    </tr>
+                    <tr style="border-style:solid; border-color: #0667E8; width: 50px;" >
+                        <td style="width: 50px; height: 25px;"> M.S.E</td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                        <td style="width: 50px; height: 25px;"> <input type="checkbox"style="width: 50px; height: 25px;"></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>  
+          </div>
+        </div><!--Fim do corpo da página de ""-->
+   
+    </div>
+      <div class="swiper-slide slide9"><!---------------------------------------------------------Inicio da página de Objeto Recolhidos --------------------------------------------------------->
+
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Objeto Recolhidos
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro"><!--inicio do corpo da página de ""-->
+          <textarea type="text" class="quadrado" style="width: 300px; height: 100px;"></textarea>
+          <div class="centro" style="width: 100%; height: 200px; justify-content: space-around;">
+            <img src="IMAGENS/camera_azul.png" width="100px">
+            <img src="IMAGENS/img_icon.png" width="90px">
+          </div>
+          <div class="centro" style="width: 100%; background-color: #0668e818; justify-content: space-around; flex-wrap: wrap;">
+            <img src="IMAGENS/img_teste.jpg" width="100px" style="margin-top: 5px; margin-bottom: 5px;">
+            <img src="IMAGENS/img_teste.jpg" width="100px" style="margin-top: 5px; margin-bottom: 5px;">
+            <img src="IMAGENS/img_teste.jpg" width="100px" style="margin-top: 5px; margin-bottom: 5px;">
+            <img src="IMAGENS/img_teste.jpg" width="100px" style="margin-top: 5px; margin-bottom: 5px;">
+            <img src="IMAGENS/img_teste.jpg" width="100px" style="margin-top: 5px; margin-bottom: 5px;">
+            <img src="IMAGENS/img_teste.jpg" width="100px" style="margin-top: 5px; margin-bottom: 5px;">
+            <img src="IMAGENS/img_teste.jpg" width="100px" style="margin-top: 5px; margin-bottom: 5px;">
+            <img src="IMAGENS/img_teste.jpg" width="100px" style="margin-top: 5px; margin-bottom: 5px;">
+            <img src="IMAGENS/img_teste.jpg" width="100px" style="margin-top: 5px; margin-bottom: 5px;">
+          </div>
+        </div><!--Fim do corpo da página de ""-->
+
+      </div><!-- Fim da página de "" -->
+
+      <div class="swiper-slide slide10"><!---------------------------------------------------------Inicio da página de Sinais e Sintomas --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Sinais e Sintomas
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Abdomen Sensível ou Rigido</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Afundamento de Crânio</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Agitação</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Aminésia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Apinéia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Bradicardia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Bradipnéia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Bronco-Aspirando</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Cefaléia</span></div>
+          <div class="linha justify">
+            <input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Cinose</span>
+            <div class="coluna">
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Lábios</span></div>
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Extremidades</span></div>
+            </div>
+          </div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Convulsão</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Decorticação</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Deformidade</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Descerebração</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Desmaio</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Desvio de Traquéia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Dispnéia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Dor local</span></div>
+          <div class="linha justify">
+            <input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Edema</span>
+            <div class="coluna">
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Generalizado</span></div>
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Localizado</span></div>
+            </div>
+          </div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Enfisema subcutâneo</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Êstase de jugular</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Face Pálida</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Hemorragia</span>
+            <div class="coluna">
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Interna</span></div>
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Externa</span></div>
+          </div>
+          </div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Hipertensão</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Hipotensão</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Náuses e vômitos</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Nasoragia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Óbito</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Otorréia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">O.V.A.C.E</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Parada</span>
+            <div class="coluna">
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Cardíaca</span></div>
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Respiratória</span></div>
+          </div>
+          </div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Priaprismo</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Prurido na Pele</span></div>
+          <div class="linha justify">
+            <input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Pulilas</span>
+            <div class="coluna">
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Anisocoria</span></div>
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Isocoria</span></div>
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Reagente</span></div>
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Ñ Reagente</span></div>
+            </div>
+            <div class="coluna">
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Midriase</span></div>
+              <div class="linha justify"><input type="checkbox" class="checkbox"><span style="font-size: 15px;margin-left: 5px;">Miose</span></div>
+            </div>
+
+          </div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Sede</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Sinal de Battle</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Sinal de Guaxinim</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Sudorese</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Taquipnéia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Taquicardia</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Tontura</span></div>
+          <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;"> <input type="text" class="input-linha"></span></div>
+
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+
+      <div class="swiper-slide slide11"><!---------------------------------------------------------Inicio da página de Procedimentos Efetuados --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Procedimentos Efetuados
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          
+            <div class="linha justify" ><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Aspiração</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Avaliação Inicial</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Avaliação Continuada</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Chave de Rautek</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Cânula de Guedel</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Desobstrução de V.A</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Desobstrução do D.E.A</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Emprego do D.E.A</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Gerenciamento dos Riscos</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Limpeza de Ferimentos</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Curativos</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Compressivo</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Encravamento</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Ocular</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Queimadura</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Simples</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">3 Pontas</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Imobilizações</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Membro do INF.DIR</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Membro do INF.ESQ</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Membro do SUP.DIR</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Membro do SUP.DIR</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Quadril</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Cervical</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Maca Sobre Rodas</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Maca Rigida</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Retirado do Capacete</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">R.C.P</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Rolamento 90°</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Rolamento 180°</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Tomada Decisão</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Tratamento de Choque</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Uso de Cânula</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Uso de Colar</span>TAM<textarea class="quadrado" style="width: 20px; height: 20px; border-radius: 5px;border-style: solid;"></textarea></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Uso KED</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Uso TTF</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Ventilação Suporte</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Oxigenoterapia</span><textarea class="quadrado" style="width: 20px; height: 20px; border-radius: 5px;border-style: solid;"></textarea>LPM</div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Reanimador</span><textarea class="quadrado" style="width: 20px; height: 20px; border-radius: 5px;border-style: solid;"></textarea>LPM</div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Meios Auxiliares</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Celesc</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Polícia Civil</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Polícia Militar</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Polícia PRE</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Polícia PRF</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">DEF.Civil</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">IPG/PC</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Samu</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><span style="font-size: 20px;margin-left: 5px;">Cit</span></div>
+            <div class="linha justify"><input type="checkbox" class="checkbox" style="width: 25px; height: 25px;"><textarea class="quadrado" style="width: 300px; height: 20px; border-radius: 5px;border-style: solid;"></textarea></div>
+          
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+      <div class="swiper-slide slide12"><!---------------------------------------------------------Inicio da página de Materiais Utilizados(A) --------------------------------------------------------->
+
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Materiais Utilizados(A)
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+          <div class="cabecalho2 centro">
+              Descartavel          
+          </div>
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro"style="padding-left: 0px;" ><!--inicio do corpo da página de ""-->
+          <table border="1" style="border-style:solid; border-color: #0667E8; width: 300px; " class="centro">
+            <tr style="border-style:solid; border-color: #0667E8;">
+              <th>Material</th>
+              <th>Quant</th>
+            </tr>
+            <tr style="border-style:solid; border-color: #0667E8;" >
+              <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Ataduras 8 <input type="checkbox"> 12<input type="checkbox">  20<input type="checkbox"> </td>
+              <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+            </tr>
+            <tr style="border-style:solid; border-color: #0667E8;" >
+              <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Catéter TP. óculos </td>
+              <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+          </tr>
+          <tr style="border-style:solid; border-color: #0667E8;" >
+            <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox">Compressa Comum </td>
+            <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+        </tr> 
+        <tr style="border-style:solid; border-color: #0667E8;" >
+          <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox">Kit's H <input type="checkbox"> P<input type="checkbox">  Q<input type="checkbox"> </td>
+          <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr>
+      <tr style="border-style:solid; border-color: #0667E8;" >
+        <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Luvas descartaveis (Pares) </td>
+        <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+    </tr>
+    <tr style="border-style:solid; border-color: #0667E8;" >
+      <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Mascaras Desc. </td>
+              <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+  </tr>
+        <tr style="border-style:solid; border-color: #0667E8;" >
+          <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Manta Alumiada </td>
+          <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+        </tr>
+        <tr style="border-style:solid; border-color: #0667E8;" >
+          <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Pás do DEA </td>
+          <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr>
+      <tr style="border-style:solid; border-color: #0667E8;" >
+        <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox">Sonda de Aspiração </td>
+        <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr> 
+      <tr style="border-style:solid; border-color: #0667E8;" >
+      <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox">Soro Fisiológico</td>
+      <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr>
+      <tr style="border-style:solid; border-color: #0667E8;" >
+      <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Talas PAP. <input type="checkbox">P <input type="checkbox">G </td>
+      <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr>
+      <tr style="border-style:solid; border-color: #0667E8;" >
+      <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> <input class="input-linha" style="width: 50px; height: 25px;" type="text" > </td>
+          <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr>
+          </table>
+        </div><!--Fim do corpo da página de ""-->
+
+      </div><!-- Fim da página de "" -->
+
+      <div class="swiper-slide slide13"><!---------------------------------------------------------Inicio da página de Materiais Utilizados(B) --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Materiais Utilizados(B)
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+          <div class="cabecalho2 centro">
+            Deixado no Hospital          
+        </div>
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro" style="padding-left: 0px;"><!--inicio do corpo da página de ""-->
+          <table border="1" style="border-style:solid; border-color: #0667E8; width: 300px; " >
+            <tr style="border-style:solid; border-color: #0667E8;" >
+              <th>Material</th>
+              <th>Quant</th>
+            </tr>
+            <tr style="border-style:solid; border-color: #0667E8;" >
+              <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Base do Estabiliza. </td>
+              <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+            </tr>
+            <tr style="border-style:solid; border-color: #0667E8;" >
+              <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Colar  N <input type="checkbox"> PP<input type="checkbox">  P<input type="checkbox"> </td>
+              <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+          </tr>
+          <tr style="border-style:solid; border-color: #0667E8;" >
+            <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox">Colar  M <input type="checkbox"> G <input type="checkbox"><input class="input-linha" style="width: 25px; height: 25px;" type="text" ></td>
+            <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+        </tr> 
+        <tr style="border-style:solid; border-color: #0667E8;" >
+          <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox">Coxins Estabiliza.</td>
+          <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr>
+      <tr style="border-style:solid; border-color: #0667E8;" >
+        <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> KED <input type="checkbox">Adul. <input type="checkbox">Infa. </td>
+        <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+    </tr>
+    <tr style="border-style:solid; border-color: #0667E8;" >
+      <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Maca Rígida </td>
+              <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+  </tr>
+        <tr style="border-style:solid; border-color: #0667E8;" >
+          <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> Tirante aranha </td>
+          <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+        </tr>
+        <tr style="border-style:solid; border-color: #0667E8;" >
+          <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox">Tirante de cabeça </td>
+          <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr>
+      <tr style="border-style:solid; border-color: #0667E8;" >
+        <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox">Sonda de Aspiração </td>
+        <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr> 
+      <tr style="border-style:solid; border-color: #0667E8;" >
+      <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox">Cânula</td>
+      <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr>
+      <tr style="border-style:solid; border-color: #0667E8;" >
+      <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> <input class="input-linha" style="width: 50px; height: 25px;" type="text" >  </td>
+      <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr>
+      <tr style="border-style:solid; border-color: #0667E8;" >
+      <td style="width: 400px; height: 25px;"><input class="checkbox" type="checkbox"> <input class="input-linha" style="width: 50px; height: 25px;" type="text" > </td>
+          <td style="width: 100px; height: 25px;"><input class="input-linha" style="width: 50px; height: 25px;" type="text" ></td>
+      </tr>
+          </table>
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+
+      <div class="swiper-slide slide14"><!---------------------------------------------------------Inicio da página de Anamnese --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Anamnese
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          <div class="coluna centro" style="width: 100%;" >
+            <span style="font-size: 20px; margin-top: 10px;">O que aconteceu(sinais e sintomas)</span>
+            <input type="text" style="border-style:solid; border-color: #0667E8;width: 300px; height: 40px; ">
+              
+            <div class="coluna centro"> 
+              <div class="linha centro"> 
+              <span style="font-size: 20px; margin-top: 10px;">Aconteceu outras vezes?</span> 
+            </div>
+              <div class="coluna centro"> 
+                  <div class="linha centro"> 
+                    <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                    <input type="checkbox" class="checkbox" style="width: 20px; height: 20px;"> 
+                    <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                    <span style="font-size: 20px;">não</span>
+                  </div>
+                </div>
+              </div>
+              <span style="font-size: 20px; margin-top: 10px;">A quanto tempo isso aconteceu?</span>
+              <input type="text" style="border-style:solid; border-color: #0667E8;width: 300px; height: 40px; ">
+                
+              <div class="coluna centro"> 
+                <div class="coluna centro"> 
+                  <div class="linha centro"> 
+                  <span style="font-size: 20px; margin-top: 10px;">Possui algum problema de saúde?</span> 
+                </div>
+                  <div class="coluna centro"> 
+                      <div class="linha centro"> 
+                        <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                        <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                        <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                        <span style="font-size: 20px;">não</span>
+                      </div>
+                    </div>
+                  </div>
+
+                   <div class=" linha centro" style="display: none;">
+                          <div class="coluna centro"> 
+                            <span style="font-size: 20px; margin-top: 10px;" >Quais?</span>
+                            <input type="text" style="border-style:solid; border-color: #0667E8;width: 300px; height: 40px; ">
+                          </div>
+                   </div>
+                </div>
+
+                <div class="coluna centro"> 
+                  <div class="coluna centro"> 
+                    <div class="linha centro"> 
+                    <span style="font-size: 20px; margin-top: 10px;">Faz uso de medicação?</span> 
+                  </div>
+                    <div class="coluna centro"> 
+                        <div class="linha centro"> 
+                          <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                          <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                          <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                          <span style="font-size: 20px;">não</span>
+                        </div>
+                      </div>
+                    </div>
+
+                     <div class=" coluna centro" style="display: none;">
+                          <div class="linha centro">
+                              <div class="coluna centro">
+                                <span style="font-size: 20px; margin-top: 10px;" >Horário da ultima <br>medicação?</span> 
+                                <input type="text" style="border-style:solid; border-color: #0667E8; width: 300px; height: 40px; ">
+                            </div>
+                          </div>
+                          <div class=" linha centro" style=" margin-top: 5px;">
+                              <div class="coluna centro">
+                                  <span  >Quais?</span>
+                                  <input type="text" style="border-style:solid; border-color: #0667E8; width: 300px; height: 40px; ">
+                            </div>
+                          </div> 
+                     </div>
+                  </div> 
+                  
+                  <div class="coluna centro"> 
+                    <div class="coluna centro"> 
+                      <div class="linha centro"> 
+                      <span style="font-size: 20px; margin-top: 10px;">Alérgico a algo?</span> 
+                    </div>
+                      <div class="coluna centro"> 
+                          <div class="linha centro"> 
+                            <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                            <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                            <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                            <span style="font-size: 20px;">não</span>
+                          </div>
+                        </div>
+                      </div>
+
+                       <div class=" linha centro" style="display: none;">
+                              <div class=" coluna centro"> 
+                                <span style="font-size: 20px; margin-top: 10px;" >Especifique</span>
+                                <input type="text" style="border-style:solid; border-color: #0667E8; width: 300px; height: 40px; ">
+                              </div>
+                       </div>
+                    </div>
+                    <div class="coluna centro"> 
+                      <div class="coluna centro"> 
+                        <div class="linha centro"> 
+                        <span style="font-size: 20px; margin-top: 10px;">Ingeriu alimento ou liquido em 6h?</span> 
+                      </div>
+                        <div class="coluna centro"> 
+                            <div class="linha centro"> 
+                              <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                              <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                              <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                              <span style="font-size: 20px;">não</span>
+                            </div>
+                          </div>
+                        </div>
+                         <div class=" linha centro" style="display: none;">
+                                <div class="coluna centro"> 
+                                  <span style="margin-top: 10px; font-size: 20px;" >Que horas?</span>
+                                  <input type="text" style="border-style:solid; border-color: #0667E8; width: 300px; height: 40px; ">
+                              </div>
+                         </div>
+                      </div> 
+                  
+          </div>
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+      <div class="swiper-slide slide15"><!---------------------------------------------------------Inicio da página de Anamnese Gestacional --------------------------------------------------------->
+
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Anamnese Gestacional
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+        
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          <div class="coluna centro" style="width: 100%;" >
+            <span style="font-size: 20px; margin-top: 10px;">Periodo de gestação <input type="text" class="input-linha" style="width: 125px;"></span>
+          
+            <div class="coluna centro"> 
+              <div class="linha centro"> 
+              <span style="font-size: 20px; margin-top: 10px;">Fez pré-natal?</span> 
+             </div>
+              <div class="coluna centro"> 
+                  <div class="linha centro"> 
+                    <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                    <input type="checkbox" class="checkbox" style="width: 20px; height: 20px;"> 
+                    <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                    <span style="font-size: 20px;">não</span>
+                  </div>
+                </div>
+              </div>
+              <span style="font-size: 20px; margin-top: 10px;">Nome do médico <input type="text"class="input-linha"style="width: 125px;"></span>
+                
+              <div class="coluna centro"> 
+                <div class="coluna centro"> 
+                  <div class="linha centro"> 
+                  <span style="font-size: 20px; margin-top: 10px;">Existe possibilidade de complicações?</span> 
+                </div>
+                  <div class="coluna centro"> 
+                      <div class="linha centro"> 
+                        <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                        <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                        <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                        <span style="font-size: 20px;">não</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="coluna centro"> 
+                    <div class="linha centro"> 
+                    <span style="font-size: 20px; margin-top: 10px;">É o primeiro filho?</span> 
+                  </div>
+                    <div class="coluna centro"> 
+                        <div class="linha centro"> 
+                          <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                          <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                          <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                          <span style="font-size: 20px;">não</span>
+                        </div>
+                      </div>
+                    </div>
+                   <div class=" linha centro" style="display:none ;">
+                          <div class="coluna centro"> 
+                            <span style="font-size: 20px; margin-top: 10px;" >Quantos?</span>
+                            <input type="text" style="width: 225px; "class="input-linha">
+                          </div>
+                   </div>
+              </div>
+              <div class="coluna centro"> 
+                <div class="linha centro"> 
+                <span style="font-size: 20px; margin-top: 10px;">Tempo das contrações:</span> 
+               </div>
+                <div class="coluna centro"> 
+                    <div class="linha centro"> 
+                      <span style="font-size: 20px; margin-left: 5px; "> Duração:</span> 
+                      <input type="text" style="width: 45px;" class="input-linha" > 
+                      
+                      <span style="font-size: 20px;">Intervalo:</span>
+                      <input type="text" style="width: 45px;" class="input-linha" > 
+                    </div>
+                  </div>
+                </div>
+
+                <div class="coluna centro"> 
+                  <div class="coluna centro"> 
+                    <div class="linha centro"> 
+                    <span style="font-size: 20px; margin-top: 10px;">Sente pressão na região do quadril ou <br><span style="font-size: 20px; margin-top: 10px; margin-left: 75px;"> vontade de evacuar?</span> </span> 
+                  </div>
+                    <div class="coluna centro"> 
+                        <div class="linha centro"> 
+                          <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                          <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                          <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                          <span style="font-size: 20px;">não</span>
+                        </div>
+                      </div>
+                    </div>
+
+                     
+                  </div> 
+                  
+                  <div class="coluna centro"> 
+                    <div class="coluna centro"> 
+                      <div class="linha centro"> 
+                      <span style="font-size: 20px; margin-top: 10px;">Já houve ruptura da bolsa?</span> 
+                    </div>
+                      <div class="coluna centro"> 
+                          <div class="linha centro"> 
+                            <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                            <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                            <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                            <span style="font-size: 20px;">não</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="coluna centro"> 
+                      <div class="coluna centro"> 
+                        <div class="linha centro"> 
+                        <span style="font-size: 20px; margin-top: 10px;">Foi feito inspeção visual?</span> 
+                      </div>
+                        <div class="coluna centro"> 
+                            <div class="linha centro"> 
+                              <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                              <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                              <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                              <span style="font-size: 20px;">não</span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                    </div> 
+                      <div class="coluna centro"> 
+                        <div class="coluna centro"> 
+                          <div class="linha centro"> 
+                          <span style="font-size: 20px; margin-top: 10px;">Parto realizado?</span> 
+                        </div>
+                          <div class="coluna centro"> 
+                              <div class="linha centro"> 
+                                <span style="font-size: 20px; margin-left: 5px; "> sim</span> 
+                                <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                                <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                                <span style="font-size: 20px;">não</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+                        <span style="font-size: 20px; margin-top: 10px;">Hora do nascimento <input type="text"class="input-linha"style="width: 125px;"></span>
+
+                        <div class="coluna centro"> 
+                          <div class="coluna centro"> 
+                            <div class="linha centro"> 
+                            <span style="font-size: 20px; margin-top: 10px;">Sexo do bebê</span> 
+                          </div>
+                            <div class="coluna centro"> 
+                                <div class="linha centro"> 
+                                  <span style="font-size: 20px; margin-left: 5px; "> Fem</span> 
+                                  <input type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                                  <input  type="checkbox" class="checkbox"style="width: 20px; height: 20px;"> 
+                                  <span style="font-size: 20px;">Mas</span>
+                                </div>
+                              </div>
+                            </div>
+                            
+                        </div> 
+                        <span style="font-size: 20px; margin-top: 10px;">Nome do bebê <input type="text"class="input-linha"style="width: 125px;"></span>
+
+          </div>
+        </div><!--Fim do corpo da página de ""-->
+
+      </div><!-- Fim da página de "" -->
+
+      <div class="swiper-slide slide16"><!---------------------------------------------------------Inicio da página de TERMO DE RECUSA DE ATENDIMENTO E/OU TRANSPORTE
+        --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo" style="font-size: 15px;">
+            TERMO DE RECUSA DE ATENDIMENTO E/OU TRANSPORTE
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          <div class="ok1">
+            <div class="conteudo">
+              Eu,<input type="text" class="quadrado" style="width: 30%; height: 10px; margin-right: 5PX;">Portador da carteira de identidade RG N°<br><input type="text" class="quadrado" style="width: 35%; height: 10px;">
+            </div>
+            <br><br>
+            <div class="conteudo1">
+              inscrito no CPF sob N° 
+              <input type="text" class="quadrado" style="width: 30%; height: 10px;">
+            </div>
+            <div class="linha2"></div>
+            <div class="conteudo2">
+              NA QUALIDADE DE VÍTIMA/PACIENTE, USANDO DOS DIREITOS QUE A LEI ME GARANTE, ME RECUSO NESTE ATO O ATENDIMENTO E/OU TRANSPORTE OFERECIDO PELOS BOMBEIROS- VOLUNTÁRIOS DE GUARAMIRIM/SC, E ASSUMO, INDIVIDUALMENTE A RESPONSABILIDADE PELAS CONSEQUENCIAS QUE POSSAM
+              OCORRER POR RAZÃO DA MINHA RECUSA.
+              DECLARO QUE FUI DEVIDAMENTE INFORMADO SOBRE O PROCEDIMENTO PELO QUAL EU DEVERIA ME SUBMETER, E ALERTADO SOBRE OS RISCOS À SAÚDE DASUANÃO REALIZAÇÃO.
+            </div>
+            <div class="linha1"></div>
+            <div class="conteudo3">
+              ASS:
+              <input type="text" class="quadrado" style="width: 30%; height: 15px; border-radius: 10px;">
+            </div>
+            <div class="conteudo4">
+              Testemunha:
+              <input type="text" class="quadrado" style="width: 30%; height: 15px; border-radius: 10px;">
+            </div>
+            <div class="conteudo5">
+              DOC: 
+              <input type="text" class="quadrado" style="width: 30%; height: 15px; border-radius: 10px;">
+            </div>
+            <div class="conteudo6">
+              Testemunha
+              <input type="text" class="quadrado" style="width: 30%; height: 15px; border-radius: 10px;">
+            </div>
+            <div class="conteudo7">
+              DOC:
+              <input type="text" class="quadrado" style="width: 30%; height: 15px; border-radius: 10px;">
+            </div>
+          </div>
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+
+      <div class="swiper-slide slide17"><!---------------------------------------------------------Inicio da página de Observações Importantes --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Observações Importantes
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro" style="height: 100%;"><!--inicio do corpo da página de ""-->
+          <textarea class="quadrado" style="width: 300px; height: 600px;"></textarea>
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+      <div class="swiper-slide slide18"><!---------------------------------------------------------Inicio da página de Avaliação Cinemática --------------------------------------------------------->
+
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Avaliação Cinemática
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body centro"style="padding-left: 0px;" ><!--inicio do corpo da página de ""-->
+          <table border="1" style=" border-style:solid; border-color: #0667E8; width: 300px; " class="centro">
+            <tr style="border-style:solid; border-color: #0667E8;padding-top: 25px;">
+              <th style="border-style: none;"></th>
+              <th style="color: green;">Sim</th>
+              <th style="color: red;">Não</th>
+            </tr>
+            <tr style="border-style:solid; border-color: #0667E8;" >
+              <td style="width: 400px; height: 25px;">Distúrbio de comportamento </td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+            </tr>
+            <tr style="border-style:solid; border-color: #0667E8;" >
+              <td style="width: 400px; height: 25px;">  Encontrado de capacete</td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+          </tr>
+          <tr style="border-style:solid; border-color: #0667E8;" >
+            <td style="width: 400px; height: 25px;">Encontrado de cinto</td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+        </tr> 
+        <tr style="border-style:solid; border-color: #0667E8;" >
+          
+          <td style="width: 400px; height: 25px;">Para-brisas avariado</td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+      </tr>
+      <tr style="border-style:solid; border-color: #0667E8;" >
+        
+        <td style="width: 400px; height: 25px;">Caminhando na cena</td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+    </tr>
+    
+        <tr style="border-style:solid; border-color: #0667E8;" >
+          
+          <td style="width: 400px; height: 25px;">Painel avariado</td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+        </tr>
+        <tr style="border-style:solid; border-color: #0667E8;" >
+          <td style="width: 400px; height: 25px;">Volante torcido</td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+              <td style="width: 100px; height: 25px;"> <input class="checkbox" type="checkbox" style="width: 24px;height: 24px;"></td>
+      </tr>
+      
+          </table>
+        </div><!--Fim do corpo da página de ""-->
+
+      </div><!-- Fim da página de "" -->
+
+      <div class="swiper-slide slide19"><!---------------------------------------------------------Inicio da página de Responsável --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Responsável
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          <div class="ok">
+            NOME COMPLETO:
+            <br><br>
+            <textarea class="quadrado" style="width: 300px; height: 45px; border-radius: 10px;border-style: solid;"></textarea>
+            <br><br>
+            <button type="submit" class="confirma">
+              <font style="font-size: 20px;">CONCLUÍDO</font>
+            </button>
+            <div class="divul">
+              Divulgar para imprensa?
+              <form>
+                Sim<INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op1"> 
+                <INPUT TYPE="RADIO" NAME="OPCAO" VALUE="op2"> Não
+              </form>
+            </div>
+          </div>
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+
+      <div class="swiper-slide slide20"><!---------------------------------------------------------Inicio da página de "" --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Preencimento
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+      <div class="swiper-slide slide21"><!---------------------------------------------------------Inicio da página de "" --------------------------------------------------------->
+
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Título
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          TEXTO
+        </div><!--Fim do corpo da página de ""-->
+
+      </div><!-- Fim da página de "" -->
+
+      <div class="swiper-slide slide22"><!---------------------------------------------------------Inicio da página de "" --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Título
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          TEXTO
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+
+      <div class="swiper-slide slide23"><!---------------------------------------------------------Inicio da página de "" --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Título
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          TEXTO
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+      <div class="swiper-slide slide24"><!---------------------------------------------------------Inicio da página de "" --------------------------------------------------------->
+
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Título
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          TEXTO
+        </div><!--Fim do corpo da página de ""-->
+
+      </div><!-- Fim da página de "" -->
+
+      <div class="swiper-slide slide25"><!---------------------------------------------------------Inicio da página de "" --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Título
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          TEXTO
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+
+      <div class="swiper-slide slide26"><!---------------------------------------------------------Inicio da página de "" --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Título
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          TEXTO
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+      <div class="swiper-slide slide27"><!---------------------------------------------------------Inicio da página de "" --------------------------------------------------------->
+
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Título
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          TEXTO
+        </div><!--Fim do corpo da página de ""-->
+
+      </div><!-- Fim da página de "" -->
+
+      <div class="swiper-slide slide28"><!---------------------------------------------------------Inicio da página de "" --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Título
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          TEXTO
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+
+      <div class="swiper-slide slide29"><!---------------------------------------------------------Inicio da página de "" --------------------------------------------------------->
+        
+        <div class="cabecalho"><!-- Inicio do cabeçalho da pagina "" -->
+          <img class="menu-icon" src="IMAGENS/menu_icon.png" width="50px">
+          <div class="cabecalho-titulo">
+            Título
+          </div>
+          <img src="IMAGENS/logo_medicina.png" width="40px" height="40px">
+        </div><!-- Fim do cabeçalho da pagina "" -->
+
+        <div class="slide-body"><!--inicio do corpo da página de ""-->
+          TEXTO
+        </div><!--Fim do corpo da página de ""-->
+
+      </div>
+    </div>
+  </div>
+</form>
+
+</body>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="JS/index.js"></script>
+  <script src="JS/swiper.js"></script>
+  <script src="JS/rolagem.js"></script>
+  
+  
+  
+</html>

@@ -11,7 +11,7 @@ $('#formlogin').submit(function(e){
         dataType: 'json'
     }).done(function(result) {
         if (result.success) {
-            window.location.href = 'index.html';
+            window.location.href = 'ficha.html';
         } else {
             alert("Erro: " + result.error);
         }
