@@ -55,9 +55,13 @@ function PacienteRegistro(){
 };
 
 function SexoMasculino() {
-    var cartaoPagamento = document.getElementById("cartaoPagamento"); 
-    cartaoPagamento.checked = false;
-  }  
+    var sexo_paciente_f = document.getElementById("sexo_paciente_f"); 
+    sexo_paciente_f.checked = false;
+  } 
+function SexoFeminino() {
+    var sexo_paciente_m = document.getElementById("sexo_paciente_m"); 
+    sexo_paciente_m.checked = false;
+  } 
 
 function TermoDeRecusa(){
 
