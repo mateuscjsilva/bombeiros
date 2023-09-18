@@ -15,14 +15,21 @@ function PacienteRegistro(){
     var HChPaciente = $('#h_ch_paciente').val();
     var KmFinalPaciente = $('#km_final_paciente').val();
     var CodSiaSusPaciente = $('#cod_sia_sus_paciente').val();
-    
-    console.log(Data);
+    var SexoPaciente = $['#sexo_paciente'];
+    if (SexoPaciente === 'm') {
+        SexoPaciente = 'm';
+    } elseif ($SexoPaciente === 'f'){
+        SexoPaciente = 'f';
+    }
+
+    console.log(SexoPaciente);
 
      $.ajax({
         url: 'PHP/tabela-paciente.php',
         method: 'POST',
         data: {
             Data: Data,
+            SexoPaciente: SexoPaciente,
             NomeHospitalPaciente: NomeHospitalPaciente,
             NomePaciente: NomePaciente,
             IdadePaciente: IdadePaciente,
@@ -37,6 +44,40 @@ function PacienteRegistro(){
             HChPaciente: HChPaciente,
             KmFinalPaciente: KmFinalPaciente,
             CodSiaSusPaciente: CodSiaSusPaciente
+        },
+        dataType: 'json'
+    }).done(function() {
+        alert("alguma coisa deu!!");
+    });
+    
+};
+function TermoDeRecusa(){
+
+    var NomeTermoRecusa = $('#Nome_Recusa').val();
+    var IdentidadeRecusa = $('#Identidade_Recusa').val();
+    var CpfRescusa = $('#Cpf_Recusa').val();
+    var AssinaturaRecusa = $('#Assinatura_Recusa').val();
+    var TestemunhaRecusa = $('#Testemunha_Recusa').val();
+    var DocRecusa = $('#Doc_Recusa').val();
+    var TestemunhaRecusa2 = $('#Testemunha_Recusa_2').val();
+    var DocRecusa2 = $('#Doc_Recusa_2').val();
+    
+    
+    console.log(Data);
+
+     $.ajax({
+        url: 'PHP/Termo_de_recusa.php',
+        method: 'POST',
+        data: {
+            NomeTermoRecusa: NomeTermoRecusa,
+            IdentidadeRecusa: IdentidadeRecusa,
+            CpfRescusa: CpfRescusa,
+            AssinaturaRecusa: AssinaturaRecusa,
+            TestemunhaRecusa: TestemunhaRecusa,
+            DocRecusa: DocRecusa,
+            TestemunhaRecusa2: TestemunhaRecusa2,
+            DocRecusa2: DocRecusa2,
+            
         },
         dataType: 'json'
     }).done(function() {
